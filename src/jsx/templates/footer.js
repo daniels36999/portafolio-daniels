@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Footer(props) {
+function Footer() {
   return (
       
     <footer className="footer">
@@ -10,13 +10,13 @@ function Footer(props) {
             <p>¡Hola! Este es mi portafolio virtual, donde puedes ver algunos de los proyectos en los que he trabajado. Si quieres saber más sobre mí o contactarme, ¡visita mis páginas de contacto!</p>
 
             <div className="social">
-                <a href="https://portafolio-daniels.netlify.app/" target="_blank" className="social-btn">
+                <a href="https://portafolio-daniels.netlify.app/" target="_blank" className="social-btn" rel="noopener noreferrer">
                 </a>
-                <a href="https://www.linkedin.com/in/daniel-patricio-yautibug-65a656209/" target="_blank" className="social-btn">
+                <a href="https://www.linkedin.com/in/daniel-patricio-yautibug-65a656209/" target="_blank" className="social-btn" rel="noopener noreferrer">
                 </a>
-                <a href="https://github.com/daniels36999" target="_blank" className="social-btn">
+                <a href="https://github.com/daniels36999" target="_blank" className="social-btn" rel="noopener noreferrer">
                 </a>
-                <a href="https://grabcad.com/daniel.patricio.yautibug-1" target="_blank" className="social-btn">
+                <a href="https://grabcad.com/daniel.patricio.yautibug-1" target="_blank" className="social-btn" rel="noopener noreferrer">
                 </a>
             </div> 
         </div>
@@ -39,11 +39,11 @@ function Footer(props) {
         <div className="footer-information "> {/* ENLACES */}
             <h2>Quick Links</h2>
             <div className="footer-links">
-                <a className="btn-link" href="/index.php">&gt;  Inicio</a>
-                <a className="btn-link" href="/build/php/sobremi.php">&gt;  Sobre Mi</a>
-                <a className="btn-link" href="#">&gt;  Our Services</a>
-                <a className="btn-link" href="#">&gt;  Term &amp; Condition</a>
-                <a className="btn-link" href="#">&gt;  Support</a>
+                <a className="btn-link" href="#" rel="noopener noreferrer">&gt;  Inicio</a>
+                <a className="btn-link" href="#" rel="noopener noreferrer">&gt;  Sobre Mi</a>
+                <a className="btn-link" href="#" rel="noopener noreferrer">&gt;  Our Services</a>
+                <a className="btn-link" href="#" rel="noopener noreferrer">&gt;  Term &amp; Condition</a>
+                <a className="btn-link" href="#" rel="noopener noreferrer">&gt;  Support</a>
             </div>
         </div>
 
@@ -60,7 +60,7 @@ function Footer(props) {
 
     <div className="footer-container-2">
         <p className="copyrigth"> Todos los derechos reservados  &copy;</p>
-        <p>Design By: <a href="https://github.com/daniels36999" target="_blank">Daniels Yautibug</a></p>
+        <p>Design By: <a href="https://github.com/daniels36999" target="_blank" rel="noopener noreferrer">Daniels Yautibug</a></p>
     </div>
     </footer>
 

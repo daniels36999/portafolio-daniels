@@ -1,19 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { App, AppFooter } from './jsx/App';
 
+import App from './jsx/App';
 import './css/App.css';
 
-ReactDOM.render(
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
+const root = createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-ReactDOM.render(
-  <React.StrictMode>
-    <AppFooter />
-  </React.StrictMode>,
-  document.getElementById('root2')
+  </React.StrictMode>
 );

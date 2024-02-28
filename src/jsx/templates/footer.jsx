@@ -1,6 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import getIcon from './recursos/iconos';
+
+
 
 function Footer() {
+
+    const clicEnlace = (url) => {
+        window.open(url, '_blank');
+      };    
+
   return (
       
     <footer className="footer">
@@ -10,28 +20,33 @@ function Footer() {
             <p>¡Hola! Este es mi portafolio virtual, donde puedes ver algunos de los proyectos en los que he trabajado. Si quieres saber más sobre mí o contactarme, ¡visita mis páginas de contacto!</p>
 
             <div className="social">
-                <a href="https://portafolio-daniels.netlify.app/" target="_blank" className="social-btn" rel="noopener noreferrer">
-                </a>
-                <a href="https://www.linkedin.com/in/daniel-patricio-yautibug-65a656209/" target="_blank" className="social-btn" rel="noopener noreferrer">
-                </a>
-                <a href="https://github.com/daniels36999" target="_blank" className="social-btn" rel="noopener noreferrer">
-                </a>
-                <a href="https://grabcad.com/daniel.patricio.yautibug-1" target="_blank" className="social-btn" rel="noopener noreferrer">
-                </a>
+                <button onClick={() => clicEnlace('https://portafolio-daniels.netlify.app')} className="social-btn"> 
+                    {getIcon('web')}
+                </button>
+                <button onClick={() => clicEnlace('https://www.linkedin.com/in/daniel-patricio-yautibug-65a656209/')} className="social-btn"> 
+                    {getIcon('linkedin')}
+                </button>
+                <button onClick={() => clicEnlace('https://github.com/daniels36999')} className="social-btn"> 
+                    {getIcon('github')}
+                </button>
+                <button onClick={() => clicEnlace('https://grabcad.com/daniel.patricio.yautibug-1')} className="social-btn"> 
+                    {getIcon('grabcad')}
+                </button>
             </div> 
         </div>
 
         <div className="footer-information "> {/* LOCATION*/}
             <h2>Address</h2>
             <div className="footer-address">
+                {getIcon('location')}
                 <p>Ecuador</p>
             </div>
             <div className="footer-address">
-
+                {getIcon('address')}
                 <p>Guamote, Chimbprazo</p>
             </div>
             <div className="footer-address">
-
+                {getIcon('email')}
                 <p>dx.daniels14@gmail.com</p>
             </div>
         </div>
@@ -39,11 +54,11 @@ function Footer() {
         <div className="footer-information "> {/* ENLACES */}
             <h2>Quick Links</h2>
             <div className="footer-links">
-                <a className="btn-link" href="#" rel="noopener noreferrer">&gt;  Inicio</a>
-                <a className="btn-link" href="#" rel="noopener noreferrer">&gt;  Sobre Mi</a>
-                <a className="btn-link" href="#" rel="noopener noreferrer">&gt;  Our Services</a>
-                <a className="btn-link" href="#" rel="noopener noreferrer">&gt;  Term &amp; Condition</a>
-                <a className="btn-link" href="#" rel="noopener noreferrer">&gt;  Support</a>
+                <Link className="btn-link" to="/home" >&gt;  Inicio</Link>
+                <Link className="btn-link" to="/nosotros" >&gt;  Sobre Mi</Link>
+                <Link className="btn-link" to="#" >&gt;  Our Services</Link>
+                <Link className="btn-link" to="#" >&gt;  Condition</Link>
+                <Link className="btn-link" to="#" >&gt;  Support</Link>
             </div>
         </div>
 
@@ -60,7 +75,7 @@ function Footer() {
 
     <div className="footer-container-2">
         <p className="copyrigth"> Todos los derechos reservados  &copy;</p>
-        <p>Design By: <a href="https://github.com/daniels36999" target="_blank" rel="noopener noreferrer">Daniels Yautibug</a></p>
+        <p>Design By: <button onClick={() => clicEnlace('https://github.com/daniels36999')}> Daniels Yautibug </button></p>
     </div>
     </footer>
 

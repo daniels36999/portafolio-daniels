@@ -1,8 +1,14 @@
 @use 'base/variables' as va;
 
 .footer{
-    background-image: url(../img/footer.jpg);
+    background-image: url(../assets/img/footer.jpg);
     font-family: va.$fuente_secundaria;
+
+    button{
+        background-color: transparent;
+        padding: 0; // Elimina el espacio interno
+        margin: 0;// Elimina el espacio exterio
+    }
 }
 
 .footer-container-1{
@@ -41,7 +47,7 @@
             a{
                 line-height: 0;
             }
-        
+    
             .social-btn{
                 display: flex;
                 border: 2px solid va.$gris;

@@ -1,27 +1,19 @@
-import Testimonio from './templates/template';
-import Footer from './templates/footer';
-
-
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import Home from './componentes/home';
+import Nosotros from './componentes/nosotros';
 
 function App() {
   return (
-    <div className='App'>
-      <div className='contenedor-principal'>
-        <h1>Esto es lo que dicen nuestros alumnos sobre freeCodeCamp:</h1>
-        <Testimonio
-          nombre='Shawn Wang'/>
-      </div>
+    <div>
+      <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/nosotros" element={<Nosotros />} />
+      </Routes>     
+      </BrowserRouter>      
     </div>
   );
 }
 
-function AppFooter() {
-  return (
-        <Footer/>
-  );
-}
-
-export {
-  App,
-  AppFooter
-};
+export default App;

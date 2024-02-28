@@ -52,6 +52,7 @@ php -S localhost:3000
 //ERROR(CMD):crao -n <app-name>
 
 npx create-react-app mi-aplicacion
+npm install react-router-dom
 
 
 //GITHUB PAGES
@@ -63,3 +64,6 @@ npx create-react-app mi-aplicacion
 npm install --save-dev gh-pages
 npm run build
 npm run deploy
+
+
+  "homepage": "https://daniels36999.github.io/portafolio-daniels/",

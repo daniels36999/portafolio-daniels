@@ -5,6 +5,8 @@ git add .
 git commit .m "Update"
 git push origin main
 
+git push --force origin main
+
 //NPM
 -------------------------------------
 //ERROR: Elimina /node-modules

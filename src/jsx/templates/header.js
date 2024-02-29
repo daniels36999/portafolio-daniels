@@ -14,12 +14,12 @@ const Header = () => {
         <header>
             <div className='header'>
                 <div className='header-logo'>
-                    <Link className="link-header" to="/home" >
+                    <Link className="link-header" to="/portafolio-daniels" >
                         <img src={imagenes.logo} alt="Imagen Logo" />
                     </Link>
                 </div>
                 <div className='header-links'>
-                    <Link className="link-header" to="/home" >&gt;  Inicio</Link>
+                    <Link className="link-header" to="/portafolio-daniels" >&gt;  Inicio</Link>
                     <Link className="link-header" to="/nosotros" >&gt;  Sobre Mi</Link>
                     <Link className="link-header" to="/home" >&gt;  Servicios</Link>
                     <Link className="link-header" to="/nosotros" >&gt;  Blog Mi</Link>

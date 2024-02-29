@@ -54,7 +54,7 @@ function Footer() {
         <div className="footer-information "> {/* ENLACES */}
             <h2>Quick Links</h2>
             <div className="footer-links">
-                <Link className="btn-link" to="/home" >&gt;  Inicio</Link>
+                <Link className="btn-link" to="/portafolio-daniels" >&gt;  Inicio</Link>
                 <Link className="btn-link" to="/nosotros" >&gt;  Sobre Mi</Link>
                 <Link className="btn-link" to="#" >&gt;  Our Services</Link>
                 <Link className="btn-link" to="#" >&gt;  Condition</Link>

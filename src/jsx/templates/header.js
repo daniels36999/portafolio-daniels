@@ -11,7 +11,7 @@ const Header = () => {
       };
 
     return (
-        <header>
+        <header >
             <div className='header'>
                 <div className='header-logo'>
                     <Link className="link-header" to="/portafolio-daniels" >

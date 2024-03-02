@@ -1,0 +1,79 @@
+@use 'base/variables' as va;
+
+.consola{
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    background-color: #333;
+    border: 6px solid  #333;
+    border-top: none;
+    border-radius: 5px;
+    flex: 1;
+
+    
+    
+    .consola-head{
+      background-color: #333;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 2rem;
+      margin: 0;
+
+      h5{
+        color: #eee;
+        margin: 0;
+        
+      }
+
+      .consola-btn{
+        display: flex;
+        column-gap: 1rem;
+        .con-btn{
+          border-radius: 50%;
+          width: 15px;
+          height: 15px;
+        }
+      
+        .consola-btn-1{
+          background-color: rgb(255, 0, 0);
+        }
+        .consola-btn-2{
+          background-color: rgb(251, 255, 0);
+        }
+        .consola-btn-3{
+          background-color: rgb(68, 255, 0);
+        }
+      }
+    }
+  
+    .consola-contenido{
+      background-color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      min-height: 30rem;
+      padding: 3rem;
+      border-radius: 5px;
+      p{
+        color: #0f0;
+        font-family: va.$fuente_secundaria;
+        line-height: 1.2;
+      } 
+
+      .consola-logo{
+        color: #0f0;
+        min-height: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.3rem;
+
+        .pre-fin{
+            padding: 2rem 0;
+        }
+      }
+    }
+  }

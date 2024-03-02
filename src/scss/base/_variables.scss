@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 // Fuentes
 $fuente_principal: 'Rationale', Helvetica, sans-serif;
 $fuente_secundaria: 'Courier', Helvetica, sans-serif;
-$fuente_terciaria: 'Rationale', Helvetica, sans-serif;
+$fuente_terciaria: 'Roboto Condensed', Helvetica, sans-serif;
+$fuente_Hac: 'VT323', Helvetica, sans-serif;
 
 // Tamaño de Media Queries
 $telefono: 480px;
@@ -15,12 +19,26 @@ $negro: #000000;
 $blanco: #FFFFFF;
 $naranja:#FF6F0F;
 $gris:#a0a0a0;
-$negro_bg:rgba(0,0,0,0.9);
-$negro_bg2:rgba(0,0,0,0.5);
+$color_titulos:#0099ff;
 
-//Colores Botones
-$color_html: #ff7504;
-$color_css: #251efb;
+//Color FOoter
+$color_footer_cont:rgba(0, 24, 66, 0.8);
+$negro_bg:rgba(0, 0, 0, 0.5);
+$negro_bg2:rgba(0,0,0,0.9);
+$color_text_sombra:rgba(4, 117, 145, 0.9);
+
+//Colores Tecnologias
+$color_html: #E34F26;
+$color_css: #1572B6;
+
+//Colores Tecnologias
+$color_web: #6441a5;
+$color_github: #313131;
+$color_linkedin: #0077b5;
+$color_grabcad: #ff1900;
+
+//Colores Consola
+$color_hac_azul:#00008b;
 
 // Fuentes
 $delgada: 300;

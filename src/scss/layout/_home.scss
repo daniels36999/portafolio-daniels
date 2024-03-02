@@ -1,10 +1,108 @@
 @use 'base/variables' as va;
 
+.informacion-texto{
+    margin: 0;
+    text-align: center;
+}
+
+//--------------------------------------------------------
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6rem;
+    flex-wrap: wrap;
+
+    h2{
+        line-height: 0;
+        margin: 2rem 0 0 0;
+    }
+
+    .proyecto-curso{
+        display: flex;
+        justify-content: center;
+        column-gap: 3rem;
+    }
+
+    .proyecto-btn-dev{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: va.$negro_bg;
+        border: 2px solid va.$gris;
+        border-radius: 5px;
+        max-width: 25rem;
+        height: 8rem;
+        flex: 1;
+
+        p{
+            color: va.$blanco;
+            text-align: center;
+            margin: 0.5rem 0 0 0;
+            max-width: 90%
+        }
+
+        img{
+            margin-top: -5rem;
+            max-width: 80%;
+            filter: drop-shadow(0 0 20px rgba(222, 88, 10, 0.9)); /* sombra suave */
+        }
+
+    }
+
+}
+
+
+//INFORACION COMSOLA
+//--------------------------------------------------------
+
+
+//-------------------------------------------------------
+.informacion{
+    display:flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    padding: 3rem;
+
+
+    .informacion-contenido{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        
+
+        img{
+            width: 90%;
+        }
+
+        .informacion-botones{
+            display: flex;
+            justify-content: center;
+            column-gap: 3rem;
+        }
+    }
+
+
+}
+//--------------------------------------------------------
 .cursos{
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     padding: 2rem ;
+
+}
+
+
+//--------------------------------------------------
+
+.informacion-consola{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  
+
 
 }

@@ -1,31 +1,67 @@
 @use 'base/variables' as va;
 
 .footer{
+    display: flex;
+    flex-direction: column;
     background-image: url(../assets/img/footer.jpg);
     font-family: va.$fuente_secundaria;
+    background-position: bottom center;
+
+    .footer-titulos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        h1, h2{
+            color:va.$color_titulos;
+            margin: 0 0 2rem 0;
+            text-shadow: 2px 5px 20px $color_text_sombra;
+        }
+
+        h1{
+            font-size: 3rem; 
+        }
+        h2{
+            font-size: 2.5rem; 
+        }
+    }
+
+    p{
+        font-size: 1.4rem;
+        color: va.$blanco;
+    }
 
     button{
         background-color: transparent;
         padding: 0; // Elimina el espacio interno
         margin: 0;// Elimina el espacio exterio
     }
+
+
 }
 
 .footer-container-1{
     background-color:va.$negro_bg;
-    padding: 5rem 3rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 3rem;  
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2vw; 
+    row-gap: 2rem;
+    padding: 3vw 5vw; 
 
-    h1, h2{
-        color:va.$naranja;
-        margin: 0 0 3rem 0;
+    @include telefono{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem 5vw;
     }
 
-    h2{
-        font-size: 2.5rem;
+    @include desktop{
+        padding: 3rem 2vw;
+        grid-template-columns: repeat(4, 1fr);
     }
+
+
 
     p, a{
         color: va.$blanco;
@@ -34,49 +70,64 @@
     }
 
     .footer-information{
-        //background-color:green;
-        padding: 0 2rem;
+        background-color: va.$color_footer_cont;
+        padding: 1rem 2vw ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        border-radius: 10px;
+        box-shadow: 0 0 25px $color_text_sombra;
+
+        @include telefono{
+            align-items: center;
+        }
+        @include tablet{
+            align-items: center;
+        }
+    
+        @include desktop{
+            align-items: flex-start;
+        }
 
         //BLOQUE 1-----------------
-        .social{
+        .footer-social-1{
             display: flex;
-            margin: 2rem 0;
-            gap: 1rem;
             justify-content: center;
+            margin: 2rem 0;
+            gap: 2rem;
+            width: 100%;
 
             a{
                 line-height: 0;
             }
-    
-            .social-btn{
-                display: flex;
-                border: 2px solid va.$gris;
-                border-radius: 10%;
-                justify-content: center;
-                align-items: center;
-
-                &:hover{
-                    cursor: pointer;
-                }
-
-                svg{
-                    padding: 0.3rem;
-                    stroke: va.$gris;
-                }
-            }
         }
 
         //BLOQUE 2-----------------
-        .footer-address{
-            display: flex;
-            gap: 2rem;
-            padding-bottom: 1rem;
-            svg{
-                stroke: va.$gris;
-                width: 30px; 
-                height: 30px; 
+        .address-contenedor{
+            .footer-address{
+                display: flex;
+                gap: 1.5vw;
+                padding-bottom: 1rem;
+                width: 100%;
+             
+                svg{
+                    stroke: va.$color_titulos;
+                    width: 30px; 
+                    height: 30px; 
+                    max-width: 10vw; 
+                    max-height: 10vw; 
+                    text-shadow: 2px 2px 4px rgba(255, 253, 253, 0.8);
+                }
+    
+                .text-largo{
+                    flex-wrap: wrap;
+                    word-break: break-all;
+                }
             }
+
         }
+
 
         //BLOQUE 3-----------------
         .footer-links{
@@ -85,26 +136,50 @@
             gap: 1rem;
 
             a{
-                font-size: 2rem;
+                font-size: 1.5rem;
                 &:hover{
                     cursor: pointer;
+                    color:va.$color_text_sombra;
+                    font-weight: bold;
                 }
-            }          
+            }  
         }
+
+        //--bloque 4
+        .footer-logo{
+            width: 100%;
+            margin-top: auto;
+            img{
+                
+                display: block;
+                margin: auto;
+                width: 70%;
+                filter: drop-shadow(0px 0px 20px rgba(128, 225, 255, 0.8));
+
+                &:hover{
+                    filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.9));
+                }
+        }
+
+        
     }
+}
 }
 
 .footer-container-2{
     background-color: va.$negro;
     display: flex;
-    justify-content: space-between;
-    padding: 0 3rem;
+    justify-content: center;
+    padding: 0.5vw 3vw ;
     p, a{
-        color: va.$blanco;
+        
         font-family: va.$fuente_terciaria;
+        font-weight: 400;
+        color: va.$gris;
+        font-size: 2vw;
     }
-    
-    
+    button{
+        color: va.$gris;
+        border: none;
+    }
 }
-
-

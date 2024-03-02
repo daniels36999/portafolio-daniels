@@ -1,6 +1,6 @@
 import React from 'react';
 import imagenes from '../../assets/imagenes';
-import getIcon from './recursos/iconos';
+import getIconTec from './recursos/iconosTec';
 
 const Curso = (varCurso) => {
 
@@ -11,25 +11,27 @@ const Curso = (varCurso) => {
     
     return (
         <div className='cursos-progra'>
-            <div>
+            <div className='curso-imagen'>
                 <button onClick={() => clicEnlace('https://daniels36999.github.io/portafolio-daniels')} className="curso-btn"> 
-                        <img src={imagenes[varCurso.imagen]} alt="Imagen Logo" />
+                    <img src={imagenes[varCurso.imagen]} alt="Imagen Logo" />
                 </button>
             </div>
-            <div>
-                <h2>{varCurso.titulo}</h2>
+            <div className='curso-titulo'>
+                <h4>{varCurso.titulo}</h4>
                 <p>{varCurso.descripcion}</p>
             </div>
-            <div>
+            <div className='curso-enlace'>
                 {varCurso.enlaces.map((enlaces, index) => (
-                    <button key={index}>{enlaces}</button>
+                    <button key={index}>
+                            {getIconTec(enlaces)}
+                    </button>
                 ))}
             </div>
-            <div className='curso-btn-tecnologia'>
+            <div className='curso-tecnologia'>
                 {varCurso.tecnologias.map((tecnologia, index) => (
                     <button className={tecnologia} key={index}>
-                        {getIcon('web')}
-                        <p class="text">{tecnologia}</p>
+                        {getIconTec(tecnologia)}
+                        <p class="texto">{tecnologia}</p>
                     </button>
                 ))}
             </div>

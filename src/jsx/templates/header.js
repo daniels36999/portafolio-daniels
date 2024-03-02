@@ -19,27 +19,51 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className='header-links'>
-                    <Link className="link-header" to="/portafolio-daniels" >&gt;  Inicio</Link>
-                    <Link className="link-header" to="/nosotros" >&gt;  Sobre Mi</Link>
-                    <Link className="link-header" to="/home" >&gt;  Servicios</Link>
-                    <Link className="link-header" to="/nosotros" >&gt;  Blog Mi</Link>
-                    <Link className="link-header" to="/nosotros" >&gt;  Contactos</Link>
+                    <div className='cont-enlace'>
+                        <div className='enlace'>
+                            <Link className="link-header" to="/portafolio-daniels" >&gt;  Inicio</Link>
+                        </div>
+                        <div className='enlace'>
+                            <Link className="link-header" to="/nosotros" >&gt;  Sobre Mi</Link>
+                        </div>
+                        <div className='enlace'>
+                            <Link className="link-header" to="/home" >&gt;  Servicios</Link>
+                        </div>
+                        <div className='enlace'>
+                            <Link className="link-header" to="/nosotros" >&gt;  Blog Mi</Link>
+                        </div>
+                        <div className='enlace'>
+                            <Link className="link-header" to="/nosotros" >&gt;  Contactos</Link>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="header-social">
-                    <button onClick={() => clicEnlace('https://portafolio-daniels.netlify.app')} className="social-btn"> 
-                        {getIcon('web')}
+                    <button className="Btn" onClick={() => clicEnlace('https://portafolio-daniels.netlify.app/')}>
+                        <span className="svgContainer">
+                             {getIcon('web')}
+                        </span>
+                        <span className="BG web"></span>
                     </button>
-                    <button onClick={() => clicEnlace('https://www.linkedin.com/in/daniel-patricio-yautibug-65a656209/')} className="social-btn"> 
-                        {getIcon('linkedin')}
+                    <button className="Btn" onClick={() => clicEnlace('https://github.com/daniels36999')}>
+                        <span className="svgContainer">
+                             {getIcon('github')}
+                        </span>
+                        <span className="BG github"></span>
                     </button>
-                    <button onClick={() => clicEnlace('https://github.com/daniels36999')} className="social-btn"> 
-                        {getIcon('github')}
+                    <button className="Btn" onClick={() => clicEnlace('https://www.linkedin.com/in/daniel-patricio-yautibug-65a656209/')}>
+                        <span className="svgContainer">
+                             {getIcon('linkedin')}
+                        </span>
+                        <span className="BG linkedin"></span>
                     </button>
-                    <button onClick={() => clicEnlace('https://grabcad.com/daniel.patricio.yautibug-1')} className="social-btn"> 
-                        {getIcon('grabcad')}
+                    <button className="Btn" onClick={() => clicEnlace('https://grabcad.com/daniel.patricio.yautibug-1')}>
+                        <span className="svgContainer">
+                             {getIcon('grabcad')}
+                        </span>
+                        <span className="BG grabcad"></span>
                     </button>
-                </div>
+                </div> 
             </div>
 
         </header>

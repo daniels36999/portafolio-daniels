@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/portafolio-daniels/static/css/main.ae85b1c0.css",
-    "main.js": "/portafolio-daniels/static/js/main.06222438.js",
-    "static/media/footer.jpg": "/portafolio-daniels/static/media/footer.f912c4af5a8581f145b5.jpg",
+    "main.css": "/portafolio-daniels/static/css/main.301c1fac.css",
+    "main.js": "/portafolio-daniels/static/js/main.d4674c4d.js",
+    "static/media/footer.jpg": "/portafolio-daniels/static/media/footer.b37833e9b18c19a511e2.jpg",
+    "static/media/fondo.jpg": "/portafolio-daniels/static/media/fondo.a52a3128066414369ec5.jpg",
+    "static/media/logo.png": "/portafolio-daniels/static/media/logo.54cef98e1085447aa494.png",
     "static/media/bg.jpg": "/portafolio-daniels/static/media/bg.faa65b361858c116b699.jpg",
-    "static/media/logo.png": "/portafolio-daniels/static/media/logo.895d24b527dc959f6ac2.png",
     "index.html": "/portafolio-daniels/index.html",
-    "main.ae85b1c0.css.map": "/portafolio-daniels/static/css/main.ae85b1c0.css.map",
-    "main.06222438.js.map": "/portafolio-daniels/static/js/main.06222438.js.map"
+    "main.301c1fac.css.map": "/portafolio-daniels/static/css/main.301c1fac.css.map",
+    "main.d4674c4d.js.map": "/portafolio-daniels/static/js/main.d4674c4d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae85b1c0.css",
-    "static/js/main.06222438.js"
+    "static/css/main.301c1fac.css",
+    "static/js/main.d4674c4d.js"
   ]
 }

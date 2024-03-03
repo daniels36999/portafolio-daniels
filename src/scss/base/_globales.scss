@@ -1,3 +1,4 @@
+@use 'base/variables' as va;
 html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -14,16 +15,17 @@ body{
 }
 
 p {
-    color: $negro;
+    color: $blanco;
     font-size: 2rem;
 }
 
 .contenedor {
     width: 95%;
-    max-width: 120rem;
+    max-width: 130rem;
     margin: 0 auto;
+    padding: 5rem 5rem;
+    background: linear-gradient(to bottom, #0000008e 10%, #0a007a00 50%, #0000008d 100%);
 }
-
 a {
     text-decoration: none;
 }
@@ -39,6 +41,7 @@ h1, h2, h3 {
     margin: 2.5rem;
     font-weight: $regular;
     text-align: center;
+    color: va.$color_titulos;
 }
 
 h1 {

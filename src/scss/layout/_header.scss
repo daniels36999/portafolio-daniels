@@ -1,6 +1,7 @@
 @use 'base/variables' as va;
 //----------------------------------------------------
 .header{
+  
     button{
       background-color: transparent;
       padding: 0; // Elimina el espacio interno
@@ -10,7 +11,7 @@
 
   }
 
-    background-color: va.$negro;
+    background-color: va.$color_bg1;
     display: grid;
     grid-template-columns: auto;
     align-items: center;

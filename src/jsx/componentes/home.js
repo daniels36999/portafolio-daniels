@@ -19,13 +19,23 @@ const Home = () => {
     };
 
     return (
+
         <div>
-            {/* --------------------------------- */}
-            <Header />
-            {/* --------------------------------- */}
+         
+        <div class="space stars1"></div>
+        <div class="space stars2"></div>
+        <div class="space stars3"></div>
+       {/* --------------------------------- */}
+       <div className='home'>  
+        <section className='portada'>
+            <div className='contenido-portada'>
+                <Header />
+                <div className='ss'>
+                    <h1>Portafolio Digital</h1>
+                </div>
+            </div>
 
-            <h1>Portafolio Digital</h1>
-
+        </section>
             {/* --------------------------------- */}
             <section className='proyectos contenedor'>
                 <h2>CONOCIMIENTOS</h2>
@@ -52,20 +62,17 @@ const Home = () => {
             <section className='informacion contenedor'>
 
                 <h2>PROYECTOS</h2>
-
-
-
                 <p className='informacion-texto'>sta es una pagina bonita Esta es una pagina bonita Esta es una pagina bonitasta es una pagina bonita Esta es una pagina bonita Esta es una pagina bonitasta es una pagina bonita Esta es una pagina bonita Esta es una pagina bonita</p>
 
                 <div className='informacion-contenido'>
                     <div className='informacion-caracteristicas'>
-                        <div>
-                            <p>Hola Soy Daniels</p>
+                        <div className='inf-caracteristicas'>
+                            <h4>Hola Soy Daniels</h4>
                             <h2>CONOCIMIENTOS</h2>
                             <p>sta es una pagina bonita Esta es una pagina bonita Esta es una pagina bonitasta es una pagina bonita Esta es una pagina bonita Esta es una pagina bonitasta es una pagina bonita Esta es una pagina bonita Esta es una pagina bonita</p>
                         </div>
                         <div>
-                            <ul>
+                            <ul className='home-lista'>
                                 <li>Hey Saludame</li>
                                 <li>Hey Saludame</li>
                                 <li>Hey Saludame</li>
@@ -73,23 +80,19 @@ const Home = () => {
                             </ul>
                         </div>
                         <div className='informacion-botones'>
-                            <button onClick={() => clicEnlace('https://daniels36999.github.io/portafolio-daniels')}> 
+                            <button className='btn-cont-home' onClick={() => clicEnlace('https://daniels36999.github.io/portafolio-daniels')}> 
                                 <p>Aplastame</p>
                             </button>
-                            <button onClick={() => clicEnlace('https://daniels36999.github.io/portafolio-daniels')}> 
+                            <button  className='btn-cont-home' onClick={() => clicEnlace('https://daniels36999.github.io/portafolio-daniels')}> 
                                 <p>Aplastameee</p>
                             </button>
                         </div>
-
                     </div>
 
                     <div class="informacion-consola">
                        <Consola /> 
-
                     </div>
-
                 </div>
-
             </section>
 
             {/* --------------------------------- */}
@@ -104,13 +107,13 @@ const Home = () => {
                         <img src={imagenes.bg} alt="Imagen Logo"/>
                     </div>
                     <div className='informacion-caracteristicas'>
-                        <div>
-                            <p>Hola Soy Daniels</p>
+                        <div className='inf-caracteristicas'>
+                            <h4>Hola Soy Daniels</h4>
                             <h2>CONOCIMIENTOS</h2>
                             <p>sta es una pagina bonita Esta es una pagina bonita Esta es una pagina bonitasta es una pagina bonita Esta es una pagina bonita Esta es una pagina bonitasta es una pagina bonita Esta es una pagina bonita Esta es una pagina bonita</p>
                         </div>
                         <div>
-                            <ul>
+                            <ul className='home-lista'>
                                 <li>Hey Saludame</li>
                                 <li>Hey Saludame</li>
                                 <li>Hey Saludame</li>
@@ -118,10 +121,10 @@ const Home = () => {
                             </ul>
                         </div>
                         <div className='informacion-botones'>
-                            <button onClick={() => clicEnlace('https://daniels36999.github.io/portafolio-daniels')}> 
+                            <button className='btn-cont-home' onClick={() => clicEnlace('https://daniels36999.github.io/portafolio-daniels')}> 
                                 <p>Aplastame</p>
                             </button>
-                            <button onClick={() => clicEnlace('https://daniels36999.github.io/portafolio-daniels')}> 
+                            <button  className='btn-cont-home' onClick={() => clicEnlace('https://daniels36999.github.io/portafolio-daniels')}> 
                                 <p>Aplastame</p>
                             </button>
                         </div>
@@ -175,6 +178,7 @@ const Home = () => {
             </section>
 
             <Footer />
+            </div>
         </div>
     );
 };

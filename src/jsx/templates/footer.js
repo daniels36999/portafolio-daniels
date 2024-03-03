@@ -84,7 +84,7 @@ function Footer() {
                 </div>
             </div>
 
-            <div className="footer-information "> {/* CONTACTAME */}
+            <div className="footer-information foot-cont-final"> {/* CONTACTAME */}
                 <div className='footer-titulos'>
                     <h2>Newsletter</h2>
                 </div>

@@ -5,7 +5,10 @@
     flex-direction: column;
     background-image: url(../assets/img/footer.jpg);
     font-family: va.$fuente_secundaria;
-    background-position: bottom center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 
     .footer-titulos{
         display: flex;
@@ -41,7 +44,7 @@
 }
 
 .footer-container-1{
-    background-color:va.$negro_bg;
+    background-color:va.$color_bg5;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 2vw; 
@@ -70,14 +73,15 @@
     }
 
     .footer-information{
-        background-color: va.$color_footer_cont;
+        //background-color: va.$color_footer_cont;
+        background-color: va.$color_bg4;
         padding: 1rem 2vw ;
         display: flex;
         flex-direction: column;
         align-items: center;
         flex: 1;
         border-radius: 10px;
-        box-shadow: 0 0 25px $color_text_sombra;
+        //box-shadow: 0 0 25px $color_text_sombra;
 
         @include telefono{
             align-items: center;
@@ -89,6 +93,23 @@
         @include desktop{
             align-items: flex-start;
         }
+
+       //PARA EL ULTIMO CONTENEDOR DEL FOOTER SE ESCALE HORIZONTAL 
+        &.foot-cont-final{
+            grid-column: 1/1;
+            @include telefono{
+                grid-column: 2/2;
+            }
+            @include tablet{
+                grid-column: 1/4;
+            }
+        
+            @include desktop{
+                grid-column: 4/4;
+
+            }
+        }
+
 
         //BLOQUE 1-----------------
         .footer-social-1{
@@ -149,6 +170,7 @@
         .footer-logo{
             width: 100%;
             margin-top: auto;
+
             img{
                 display: block;
                 margin: auto;
@@ -158,9 +180,7 @@
                 &:hover{
                     filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.9));
                 }
-        }
-
-        
+            }
     }
 }
 }
@@ -175,10 +195,10 @@
         font-family: va.$fuente_terciaria;
         font-weight: 400;
         color: va.$gris;
-        font-size: 2vw;
+        font-size: 1vw;
     }
     button{
-        color: va.$gris;
+        color: va.$blanco;
         border: none;
     }
 }

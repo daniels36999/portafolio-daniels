@@ -1,10 +1,14 @@
 import React , { useState, useEffect }from 'react';
-const currentDate = new Date().toISOString().split('T')[0].replace(/-/g, ':');
+const currentDate = new Date();
+const year = currentDate.getFullYear();
 
 const textArray = [
-    `[${currentDate}]@Daniels --> init `,
-    `[${currentDate}]@Daniels --> init `,
-    `[${currentDate}]@Daniels --> init `,
+    `[${year}]@(Daniels)-> Ingeniero`,
+    `[${year}]@(Daniels)-> Electronica`,
+    `[${year}]@(Daniels)-> Telecomunicaciones`,
+    `[${year}]@(Daniels)-> Desarrollador Front-End`,
+    `[${year}]@(Daniels)-> HTML, CSS, JS - React`,
+    `[${year}]@(Daniels)-> SASS, Gulp,`,
     // Agrega aquí más
   ];
 
@@ -84,7 +88,7 @@ const Consola = () => {
 return(
     <div className='consola'>
       <div className='consola-head'>
-          <h5>Hola</h5>
+          <h5>CMD System</h5>
           <div className='consola-btn'>
             <div className='consola-btn-1 con-btn'></div>
             <div className='consola-btn-2 con-btn'></div>
@@ -98,9 +102,9 @@ return(
         </div>
         <div className='consola-texto'>
           {allTexts.map((text, index) => (
-            <p key={index}>{text}</p>
+            <p key={index} className='con-text'>{text}</p>
             ))}
-            <p>{currentText}</p>
+            <p className='con-text'>{currentText}</p>
         </div>
       </div>
     </div>

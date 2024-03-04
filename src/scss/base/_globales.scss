@@ -2,6 +2,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 
 *, *:before, *:after {
@@ -20,6 +21,7 @@ p {
 }
 
 .contenedor {
+   // scroll-snap-align: start;
     width: 95%;
     max-width: 130rem;
     margin: 0 auto;

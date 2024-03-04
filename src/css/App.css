@@ -328,6 +328,7 @@ template {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-snap-type: y mandatory;
 }
 
 *, *:before, *:after {
@@ -1032,9 +1033,24 @@ body {
   background-size: cover;
   background-position: center center;
   position: relative;
-  height: 500px;
+  height: 750px;
   margin: 0;
   padding: 0;
+}
+@media (min-width: 480px) {
+  .portada {
+    height: 600px;
+  }
+}
+@media (min-width: 768px) {
+  .portada {
+    height: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  .portada {
+    height: 500px;
+  }
 }
 .portada h1 {
   margin: 0;
@@ -1046,9 +1062,28 @@ body {
   width: 100%;
   height: 100%;
 }
+.portada .contenido-portada .portada-descripcion {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 2rem 5rem;
+  height: 100%;
+}
+.portada .contenido-portada .portada-descripcion .portada-desc .port-nombre {
+  font-size: 5vw;
+  margin: 0;
+}
+.portada .contenido-portada .portada-descripcion .portada-desc .port-descripcion {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.proyectos,
+.proyecto-curso,
+.proyecto-btn-dev {
+  display: flex;
+}
 
 .proyectos {
-  display: flex;
   flex-direction: column;
   row-gap: 6rem;
   width: 100%;
@@ -1058,7 +1093,6 @@ body {
   margin: 2rem 0 0 0;
 }
 .proyectos .proyecto-curso {
-  display: flex;
   flex-direction: row;
   justify-content: center;
   column-gap: 5rem;
@@ -1067,7 +1101,6 @@ body {
 }
 .proyectos .proyecto-curso .proyecto-btn-dev {
   flex-grow: 1;
-  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.633);
@@ -1090,13 +1123,29 @@ body {
     max-width: 20vw;
   }
 }
+.proyectos .proyecto-curso .proyecto-btn-dev svg {
+  margin-top: -6rem;
+  width: 90px;
+  height: 90px;
+}
+.proyectos .proyecto-curso .proyecto-btn-dev .svg-web {
+  fill: #00e5ff;
+  filter: drop-shadow(0px 10px 15px rgb(0, 255, 183));
+}
+.proyectos .proyecto-curso .proyecto-btn-dev .svg-electronica {
+  fill: #f5b800;
+  stroke: #23ed00;
+  filter: drop-shadow(0px 10px 15px rgb(0, 255, 183));
+}
+.proyectos .proyecto-curso .proyecto-btn-dev .svg-telecomunicaciones {
+  stroke: #005cfc;
+  fill: #005cfc;
+  filter: drop-shadow(0px 10px 15px rgb(0, 255, 183));
+}
 .proyectos .proyecto-curso .proyecto-btn-dev p {
   text-align: center;
+  text-transform: uppercase;
   margin: 0.5rem 0 0 0;
-}
-.proyectos .proyecto-curso .proyecto-btn-dev img {
-  margin-top: -5rem;
-  filter: drop-shadow(0 0 20px rgba(10, 84, 222, 0.681)); /* sombra suave */
 }
 
 .informacion {
@@ -1175,7 +1224,7 @@ body {
 }
 @media (min-width: 768px) {
   .informacion .informacion-contenido .informacion-botones {
-    flex-direction: rows;
+    flex-direction: row;
   }
 }
 @media (min-width: 1024px) {
@@ -1185,6 +1234,18 @@ body {
 }
 .informacion .informacion-contenido .informacion-botones button {
   width: 70%;
+}
+.informacion .informacion-contenido .informacion-botones .icon-git {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  padding-left: 2rem;
+}
+.informacion .informacion-contenido .informacion-botones .icon-git svg {
+  fill: #ffffff;
+  filter: drop-shadow(0px 0px 10px rgb(0, 119, 255));
 }
 
 .cursos {
@@ -1221,8 +1282,8 @@ body {
 }
 
 .btn-cont-home {
-  width: 165px;
-  height: 62px;
+  min-height: 62px;
+  max-height: 10vw;
   cursor: pointer;
   color: #fff;
   font-size: 17px;

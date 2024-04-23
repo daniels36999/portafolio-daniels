@@ -1,0 +1,6 @@
+@use 'base/variables' as va;
+
+.cursos{
+    display: flex;
+    column-gap: 6rem;
+}

@@ -1,0 +1,79 @@
+@use 'base/variables' as va;
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: va.$fuente_parrafo1;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 2.2rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 5rem 4rem;
+}
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3, h4 {
+    font-family: va.$fuente_titulo1;
+    margin: 0;
+    text-align: center;
+    color: va.$color_titulo1;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 2.5rem;
+    color: va.$color_bg2
+}
+h4 {
+    font-size: 2rem;
+    
+}
+
+button{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.8;
+    .wobbling-2{
+        width:200px;
+        height:4px;
+    }
+
+}

@@ -1,0 +1,14 @@
+@use 'base/variables' as va;
+
+.wobbling-2 {
+    width:150px;
+    height:3px;
+    border-radius: 20px;
+    background:
+     radial-gradient(farthest-side,rgb(255, 255, 255) 90%,#0000 ) left/5px 5px no-repeat
+     va.$color_bg2;
+    animation:w2 10s infinite linear;
+  }
+  @keyframes w2 {
+      50% {background-position:right }
+  }

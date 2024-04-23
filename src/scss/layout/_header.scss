@@ -1,0 +1,30 @@
+@use 'base/variables' as va;
+//----------------------------------------------------
+.header,
+.header-enlaces
+{
+  display: flex;
+}
+
+.header{
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 3rem;
+
+  .header-logo{
+    max-width: 160px;
+  }
+
+  .header-enlaces{
+    a{
+      display: flex;
+      margin: 0 10px 0 10px;
+      font-size: 18px;
+      font-weight: 600;
+      color: va.$color_negro;
+      &:hover{
+        color: va.$color_enlace1
+      }
+    }
+  }
+}

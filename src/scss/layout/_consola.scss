@@ -1,0 +1,90 @@
+@use 'base/variables' as va;
+
+.consola{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 50rem;
+    border: 5px solid #343434;
+    border-radius: 5px;
+
+
+    @include telefono{
+      height: 50rem;
+    }
+    @include tablet{
+      height: 50rem;
+    }
+
+    @include desktop{
+      height: 85%;
+    }
+ 
+    .consola-head{
+      background-color: #343434;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 2rem;
+      margin: 0;
+
+      h5{
+        color: #00aeff;
+        margin: 0;
+        font-size: 1.5rem;
+        
+      }
+
+      .consola-btn{
+        display: flex;
+        column-gap: 1rem;
+        .con-btn{
+          border-radius: 50%;
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      
+        .consola-btn-1{
+          background-color: rgb(255, 0, 0);
+        }
+        .consola-btn-2{
+          background-color: rgb(251, 255, 0);
+        }
+        .consola-btn-3{
+          background-color: rgb(77, 255, 0);
+        }
+      }
+    }
+  
+    .consola-contenido{
+      background-color: #1c1c1c;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      height: 100%;
+      padding: 2rem 1.5rem 3rem 1.5rem;
+
+
+      .con-text{
+        color: va.$color_bg2;
+        font-family: va.$fuente_hack;
+        font-size: 1.4rem;
+        line-height: 1.8;
+        
+      } 
+
+      .consola-logo{
+        color: rgb(0, 208, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .contenido-logo{
+          display: flex;
+          flex-direction: column;
+          font-size: 0.09rem;
+        }                                                                                                                                                
+      }
+    }
+  }

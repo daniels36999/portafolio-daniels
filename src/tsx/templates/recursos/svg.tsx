@@ -37,7 +37,7 @@ function iconosSvg(iconName: string) {
 
     //ICONO -ERROR
     const svg_error= (
-        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-file-alert" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-file-alert" width="60" height="60" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M14 3v4a1 1 0 0 0 1 1h4" />
             <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
@@ -102,21 +102,21 @@ function iconosSvg(iconName: string) {
     //ICONO ELECTRONICA
     const svg_electronica= (
     <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
-        <path  d="M9.6 20H14.4C18.4 20 20 18.4 20 14.4V9.6C20 5.6 18.4 4 14.4 4H9.6C5.6 4 4 5.6 4 9.6V14.4C4 18.4 5.6 20 9.6 20Z"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M7 10.5V13.5C7 16 8 17 10.5 17H13.5C16 17 17 16 17 13.5V10.5C17 8 16 7 13.5 7H10.5"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M8.00977 4V2"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M12 4V2"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M16 4V2"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M20 8H22"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M20 12H22"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M20 16H22"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M16 20V22"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M12.0098 20V22"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M8.00977 20V22"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M2 8H4"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M2 12H4"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M2 16H4"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path  d="M12.0007 9.69995L11.0607 11.34C10.8507 11.7 11.0207 12 11.4407 12H12.5607C12.9807 12 13.1507 12.3 12.9407 12.66L12.0007 14.3"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path  d="M9.6 20H14.4C18.4 20 20 18.4 20 14.4V9.6C20 5.6 18.4 4 14.4 4H9.6C5.6 4 4 5.6 4 9.6V14.4C4 18.4 5.6 20 9.6 20Z"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M7 10.5V13.5C7 16 8 17 10.5 17H13.5C16 17 17 16 17 13.5V10.5C17 8 16 7 13.5 7H10.5"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M8.00977 4V2"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M12 4V2"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M16 4V2"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M20 8H22"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M20 12H22"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M20 16H22"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M16 20V22"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M12.0098 20V22"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M8.00977 20V22"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M2 8H4"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M2 12H4"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M2 16H4"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path  d="M12.0007 9.69995L11.0607 11.34C10.8507 11.7 11.0207 12 11.4407 12H12.5607C12.9807 12 13.1507 12.3 12.9407 12.66L12.0007 14.3"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 
     );
@@ -124,16 +124,16 @@ function iconosSvg(iconName: string) {
     //ICONO TELECOMUNICACIONES
     const svg_telecomunicaciones= (
         <svg width="50" height="50" viewBox="0 0 400 400"  xmlns="http://www.w3.org/2000/svg" fill="none">
-            <path  d="M149.245 104.248C81.9148 221.504 205.983 311.565 310.669 252.026"  stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-            <path  d="M160.38 254.701C104.271 307.734 153.458 304.819 183.363 259.998"  stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-            <path  d="M113.923 320.669C123.278 281.161 159.195 281.161 163.688 317.118"  stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-            <path  d="M160.216 107.72C220.701 143.14 268.514 196.678 314.141 248.914"  stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-            <path  d="M231.971 153.127C288.747 138.119 269.299 136.041 255.052 182.946"  stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-            <path  d="M274.791 137.811C295.57 116.397 314.57 93.981 336.13 73"  stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-            <path  d="M287.522 133.181C282.79 129.868 279.937 125.658 277.106 121.608"  stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-            <path  d="M315.298 119.293C309.776 109.319 300.669 102.185 292.151 94.9893"  stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-            <path  d="M328.029 92.6744C320.667 90.8189 316.782 85.6555 311.826 81.1011"  stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-            <path  d="M226.184 325.629C175.203 324.332 111.184 327.346 63 326.182"  stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF"/>
+            <path  d="M149.245 104.248C81.9148 221.504 205.983 311.565 310.669 252.026"  strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"/>
+            <path  d="M160.38 254.701C104.271 307.734 153.458 304.819 183.363 259.998"  strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"/>
+            <path  d="M113.923 320.669C123.278 281.161 159.195 281.161 163.688 317.118"  strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"/>
+            <path  d="M160.216 107.72C220.701 143.14 268.514 196.678 314.141 248.914"  strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"/>
+            <path  d="M231.971 153.127C288.747 138.119 269.299 136.041 255.052 182.946"  strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"/>
+            <path  d="M274.791 137.811C295.57 116.397 314.57 93.981 336.13 73"  strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"/>
+            <path  d="M287.522 133.181C282.79 129.868 279.937 125.658 277.106 121.608"  strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"/>
+            <path  d="M315.298 119.293C309.776 109.319 300.669 102.185 292.151 94.9893"  strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"/>
+            <path  d="M328.029 92.6744C320.667 90.8189 316.782 85.6555 311.826 81.1011"  strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"/>
+            <path  d="M226.184 325.629C175.203 324.332 111.184 327.346 63 326.182"  strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round" fill="#FFFFFF"/>
         </svg>
     );
 
@@ -149,7 +149,7 @@ function iconosSvg(iconName: string) {
     );
 
     const svg_css = (
-        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-css3" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-css3" width="60" height="60" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
             <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
@@ -159,7 +159,7 @@ function iconosSvg(iconName: string) {
     //ICONOS DE PERFIL
     //-------------------------------------------------------------------------
     const svg_yo = (
-        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user-hexagon" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user-hexagon" width="60" height="60" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#6f32be" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
             <path d="M6.201 18.744a4 4 0 0 1 3.799 -2.744h4a4 4 0 0 1 3.798 2.741" />
@@ -168,7 +168,7 @@ function iconosSvg(iconName: string) {
     );
 
     const svg_date = (
-        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-calendar-month" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-calendar-month" width="60" height="60" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#6f32be" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
             <path d="M16 3v4" />
@@ -185,7 +185,7 @@ function iconosSvg(iconName: string) {
     );
 
     const svg_rowd = (
-        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-bar-to-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-bar-to-right" width="60" height="60" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M14 12l-10 0" />
             <path d="M14 12l-4 4" />
@@ -195,21 +195,21 @@ function iconosSvg(iconName: string) {
     );
 
     const svg_check = (
-        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="60" height="60" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="60" height="60" viewBox="0 0 24 24" strokeWidth="3" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M5 12l5 5l10 -10" />
         </svg>
    );
 
    const svg_email2 = (
-        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail-filled" width="60" height="60" viewBox="0 0 24 24" stroke-width="0.3" stroke="#2990ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail-filled" width="60" height="60" viewBox="0 0 24 24" strokeWidth="0.3" stroke="#2990ff" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" stroke-width="#2990ff" fill="#2990ff" />
-            <path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" stroke-width="#2990ff" fill="#2990ff" />
+            <path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" strokeWidth="#2990ff" fill="#2990ff" />
+            <path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" strokeWidth="#2990ff" fill="#2990ff" />
         </svg>
     );
     const svg_pc= (
-    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-device-desktop-code" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-device-desktop-code" width="60" height="60" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <path d="M12.5 16h-8.5a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v8" />
         <path d="M7 20h4" />

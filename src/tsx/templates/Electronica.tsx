@@ -1,7 +1,8 @@
 
 import { Link } from 'react-router-dom';
 import Iconos from './recursos/svg';
-import imagenes from '../../assets/imagenes';
+//import imagenes from '../../assets/imagenes';
+import Tarjeta1 from './components/Tarjeta1';
 
 interface ElectronicaProps {
     E_Tipo:string;
@@ -17,14 +18,21 @@ interface ElectronicaProps {
     E_Lista6:string;
     E_Correo:string;
     E_Img:string;
+    E_Titulo3:string;
+    E_Msg:string;
   }
-
 const Electronica = (varElectronica:ElectronicaProps) => {
     // Componente de imagen
     const ImagenComponente = () => {
         return (
-            <div className='about-img'>
-                <img src={imagenes[varElectronica.E_Img]} alt="Imagen Logo" />
+            <div className={`about-img ${varElectronica.E_Tipo}_img`}>
+                {/* <img src={imagenes[varElectronica.E_Img]} alt="Imagen Logo" /> */}
+                <Tarjeta1
+                    T1_Img={varElectronica.E_Img}
+                    T1_Titulo= {varElectronica.E_Titulo3}
+                    T1_Parrafo={varElectronica.E_Msg}
+                    T1_Boton='Saber Más...'
+                />
             </div>
         );
     };

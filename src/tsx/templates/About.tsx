@@ -61,7 +61,7 @@ const About = () => {
                      
                 </div>
             </div>
-            <div className='about-img'>
+            <div className='about-consola'>
                 <Consola />
             </div>
         </div>

@@ -22,27 +22,32 @@ function Footer() {
                 <div className='footer-titulos'>
                     <h1>Daniel Yautibug</h1>
                 </div>
-                <p>¡Hola! Este es mi portafolio virtual, donde puedes ver algunos de los proyectos en los que he trabajado. ¡visita mis páginas de contacto!</p>
-                <div className="footer-social-1">
+                <p>¡Hola! Te doy la bienvenida a mi portafolio virtual, un espacio donde podrás descubrir algunos de los proyectos en los que he tenido el placer de trabajar. ¡No dudes en visitar mis páginas de contacto para estar en contacto!</p>
+                <div className="footer-social-1 tarjeta-btn">
                     <Boton 
                         tipo='btn1'
                         enlace='https://portafolio-daniels.netlify.app/'
-                        svg='web'/>
+                        svg='web'
+                        clase=''nombre=''/>
 
                     <Boton 
                         tipo='btn1'
                         enlace='https://github.com/daniels36999/'
-                        svg='github'/>
+                        svg='github'
+                        clase=''nombre=''/>
+                        
 
                     <Boton 
                         tipo='btn1'
                         enlace='https://www.linkedin.com/in/daniel-patricio-yautibug-65a656209/'
-                        svg='linkedin'/>
+                        svg='linkedin'
+                        clase=''nombre=''/>
 
                     <Boton 
                         tipo='btn1'  
                         enlace='https://grabcad.com/daniel.patricio.yautibug-1'
-                        svg='grabcad'/>
+                        svg='grabcad'
+                        clase=''nombre=''/>
                 </div> 
             </div>
 
@@ -73,12 +78,12 @@ function Footer() {
                      <div className="wobbling-2"></div>
                 </div>
                 <div className="footer-links centrar-links foot-pos3">
-                    <Link className="btn-link" to="/daniels" >{Iconos('rowD')} Inicio </Link>
-                    <Link className="btn-link" to="/nosotros" >{Iconos('rowD')} Portafolio </Link>
-                    <Link className="btn-link" to="#" >{Iconos('rowD')} Servicios </Link>
-                    <Link className="btn-link" to="#" >{Iconos('rowD')} Blog </Link>
-                    <Link className="btn-link" to="#" >{Iconos('rowD')} Sobre Mi </Link>
-                    <Link className="btn-link" to="#" >{Iconos('rowD')} Contacto </Link>
+                    <Link className="btn-link" to="/portafolio-daniels" >{Iconos('rowD')} Inicio </Link>
+                    <Link className="btn-link" to="/portafolio" >{Iconos('rowD')} Portafolio </Link>
+                    <Link className="btn-link" to="/servicios" >{Iconos('rowD')} Servicios </Link>
+                    <Link className="btn-link" to="/blog" >{Iconos('rowD')} Blog </Link>
+                    <Link className="btn-link" to="/mi" >{Iconos('rowD')} Sobre Mi </Link>
+                    <Link className="btn-link" to="/contacto" >{Iconos('rowD')} Contacto </Link>
                 </div>
             </div>
 
@@ -89,7 +94,7 @@ function Footer() {
                 </div>
                 <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                 <div className='footer-logo'>
-                    <Link  to="/daniels" >
+                    <Link  to="/portafolio-daniels" >
                         <img src={imagenes.logo} alt="Imagen Logo" />
                     </Link>
                 </div>

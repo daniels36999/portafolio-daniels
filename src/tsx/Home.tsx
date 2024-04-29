@@ -3,6 +3,7 @@ import Footer from './templates/footer';
 import Cursos from './templates/Cursos';
 import About from './templates/About';
 import Electronica from './templates/Electronica';
+import Tarjeta from './templates/components/tarjeta';
 
 
 function Home() {
@@ -12,6 +13,26 @@ function Home() {
     <>
         {/* //HEADER */}
         <Header />
+
+         {/* PORTADA */}
+         {/* --------------------------------- */}
+         <section className='portada'>
+          <div className='portada-bg1'>
+            <div className='portada-contenido contenedor'>
+              <div className='portada-img'>
+                    <Tarjeta />
+                </div>
+                <div className='portada-desc'>     
+                    <h2 className='port-nombre'>Ing. en Electónica y Telecomunicaciones</h2>
+                    <h1>Hola, Soy Daniel Yautibug </h1>
+                    <p className='port-descripcion'> Ingeniero en Electrónica y Telecomunicaciones con una formación académica sólida y experiencia en el diseño, desarrollo y optimización de sistemas en electrónica, telecomunicaciones y desarrollo web (Front-End).</p>
+                    <div className='portada-btn'>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
 
         <About />
         <Electronica 
@@ -27,7 +48,9 @@ function Home() {
           E_Lista5='Instalaciones Eléctricas'
           E_Lista6='PCB'
           E_Correo='dyautibug.fie@unach.edu.ec'
-          E_Img='bg'
+          E_Img='electronica'
+          E_Titulo3='Electrónica'
+          E_Msg='"La Ingeniería en Electrónica es la disciplina que transforma la ciencia en algo útil para la humanidad."'
         />
         <Electronica 
           E_Tipo='modelo2'
@@ -42,7 +65,9 @@ function Home() {
           E_Lista5='CST Studio, Python'
           E_Lista6='Administracion de SO.'
           E_Correo='dyautibug.fie@unach.edu.ec'
-          E_Img='bg'
+          E_Img='telecomunicaciones'
+          E_Titulo3='Telecomunicaciones'
+          E_Msg='"La Ingeniería en Telecomunicaciones es el motor que impulsa la comunicación global, conectando personas, culturas y negocios."'
         />
 
         <div className='titulos'>

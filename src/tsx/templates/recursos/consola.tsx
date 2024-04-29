@@ -38,6 +38,10 @@ const Typewriter = () => {
       }
       return () => clearInterval(interval);
     }, [index, text]);
+
+    for (let i = 0; i < 1; i++) {
+      <Typewriter/>;
+    }
   
     return (
       <div className="typewriter-container">
@@ -47,7 +51,6 @@ const Typewriter = () => {
           </div>
         ))}
         <div className="text">{text}</div>
-        {/* {console.log(text)} */}
       </div>
     );
   };
@@ -55,6 +58,9 @@ const Typewriter = () => {
 
 //COSOLA--------------------------------------------
 const Consola = () => {
+
+  // const [bug, setBug] = useState<number>(0);
+  // setBug(2); 
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentText, setCurrentText] = useState('');
@@ -84,6 +90,8 @@ const Consola = () => {
         }, 2000); // Tiempo de espera antes de reiniciar
       }
     }, [allTexts]);
+    //console.log(<Typewriter/>);
+    
 {/* --------------------------------- */}
 return(
     <div className='consola'>
@@ -107,6 +115,7 @@ return(
             <p className='con-text'>{currentText}</p>
         </div>
       </div>
+      {/* {bug === 1 ? <Typewriter /> : null} */}
     </div>
 )
 }

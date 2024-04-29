@@ -1,5 +1,70 @@
 @use 'base/variables' as va;
 //----------------------------------------------------
 
+//PORTADA
+//--------------------------------------------
+.portada{
+    background-image: url('/src/assets/img/electronica.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    
+
+    .portada-bg1{
+        background-color: #000000be;
+
+    }
+
+    .portada-contenido{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        column-gap: 5rem;
+        //min-height: 600px;
+        height: 100vh;
+
+        h1, h2{
+            color: va.$color_bg2;
+        }
+        p{
+            color: va.$color_blanco;
+        }
+    }
+
+}
+
+.titulos{
+    h1{
+        line-height: 2;
+    }
+
+}
+
+.portada-img, .portada-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portada-desc{
+    align-items: flex-start;
+
+    h1{
+        font-size: calc(5rem + 1vw);
+    }
+    h2{
+        font-size: calc(2rem + 0.5vw);
+        font-family: va.$fuente_hack;
+    }
+    p{
+        text-align: justify;
+        font-size: 3rem;
+        font-family: va.$fuente_hack;
+    }
+}
+
+
+
+
 
 

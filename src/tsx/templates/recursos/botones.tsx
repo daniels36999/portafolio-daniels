@@ -4,6 +4,8 @@ interface propiedadesProps {
     tipo: string;
     enlace: string;
     svg: string;
+    clase:string;
+    nombre:string;
 
   }
 

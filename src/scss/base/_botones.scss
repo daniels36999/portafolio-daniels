@@ -100,48 +100,82 @@ box-shadow: none;
 
 ///BOTONES MODELO2
 //------------------------------
-.btn2{
-    //width: 165px;
-    min-height: 62px;
-    max-height: 10vw;
-    cursor: pointer;
-    color: #fff;
-    font-size: 17px;
-    border-radius: 1rem;
-    border: none;
-    position: relative;
-    background: #000000ca;
-    transition: 0.1s;
-
+.btn2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 2rem;
-    p{
-        font-family: va.$fuente_parrafo1;
-        font-weight: 700;
-        font-size: 2rem;
-    }
-  }
-  
-  .btn2::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(177, 7, 168) 17.8%, rgb(2, 74, 255) 100.2% );
-    filter: blur(15px);
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  
-  .btn2:active {
-    transform: scale(0.9) rotate(3deg);
-    background: radial-gradient( circle farthest-corner at 10% 20%,  rgb(0, 14, 140) 17.8%, rgb(7, 2, 51) 100.2% );
-    transition: 0.5s;
-   }
+    padding: 2px 10px;
+    gap: 10px;
+    background-color: #007ACC;
+    outline: 3px #007ACC solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
 
+  
+    .text {
+        color: white;
+        font-size: 0.8em;
+        transition: 400ms;
+    }
+
+    svg path{
+        transition: 400ms;
+        stroke: va.$color_blanco;
+        fill: va.$color_blanco;
+      }
+
+      svg{
+        width: 25px;
+        height: 25px;
+      }
+
+      
+    &.arduino-bg{
+        &:hover {
+        background-color: transparent;
+        outline: 3px va.$color_arduino solid;
+        svg path {
+            fill: va.$color_arduino ;
+            stroke: va.$color_arduino ;
+            }
+        }
+    }
+    &.spss-bg{
+        &:hover {
+        background-color: transparent;
+        outline: 3px va.$color_spss solid;
+        svg path {
+            fill: va.$color_spss ;
+            stroke: va.$color_spss ;
+            }
+        }
+    }
+
+    &.unity-bg{
+        &:hover {
+        background-color: transparent;
+        outline: 3px va.$color_unity solid;
+        svg path {
+            fill: va.$color_unity ;
+            stroke: va.$color_unity ;
+            }
+        }
+    }
+
+    &.powerbi-bg{
+        &:hover {
+        background-color: transparent;
+        outline: 3px va.$color_powerbi solid;
+        svg path {
+            fill: va.$color_powerbi ;
+            stroke: va.$color_negro ;
+            }
+        }
+    }
+}
 
    ///BOTONES MODELO2
 //------------------------------

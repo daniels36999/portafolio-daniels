@@ -26,8 +26,8 @@ function Mi() {
           <div className='mi-contenido'>
             <div className='titulos'>
                 <h3>Ingeniero en Electrónica y Telecomunicaciones</h3>
-                <h1>Ing. Daniel Patricio Yautibug</h1>
-                <div className="wobbling-2"></div>
+                <h1>Hola, Soy Daniel Patricio Yautibug</h1>
+                <div className="linea-efecto"></div>
             </div>
 
             <p>Ingeniero en Electrónica y Telecomunicaciones con una sólida formación académica y experiencia en el diseño, desarrollo y optimización de diversos sistemas electrónicos y de comunicación. También Me apasiona aplicar mis habilidades técnicas para resolver problemas complejos y contribuir al avance de la tecnología en el sector de las telecomunicaciones.  Además, mis habilidades técnicas y personales me convierten en un activo valioso para cualquier empresa que busca soluciones innovadoras y eficientes en el ámbito de las tecnologías de la información y la comunicación.</p>

@@ -18,16 +18,33 @@
 
     .portada-contenido{
         display: grid;
-        grid-template-columns: 30% 70%;
-        column-gap: 5rem;
-        //min-height: 600px;
-        height: 100vh;
+        row-gap: 5rem;
+        height: 100%;
+        padding: 3rem 2.5rem;
 
         h1, h2{
             color: va.$color_bg2;
         }
         p{
             color: va.$color_blanco;
+        }
+
+        @include telefono{
+            padding: 1rem 4rem;
+        }
+        @include tablet{
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+            row-gap: 1rem;
+            padding: 5rem 5rem;
+            height: 100%;
+        }
+    
+        @include desktop{
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 100%;
+            column-gap: 5rem;
+            height: 100vh;
         }
     }
 
@@ -47,7 +64,8 @@
 }
 
 .portada-desc{
-    align-items: flex-start;
+    align-items: center;
+    grid-row: 1/1;
 
     h1{
         font-size: calc(5rem + 1vw);
@@ -60,6 +78,19 @@
         text-align: justify;
         font-size: 3rem;
         font-family: va.$fuente_hack;
+    }
+
+    @include telefono{
+        grid-row: 1/1;
+    }
+    @include tablet{
+        grid-row: 1/1;
+    }
+
+    @include desktop{
+        grid-column: 2/3;
+        grid-row: 1/1;
+        align-items: flex-start;
     }
 }
 

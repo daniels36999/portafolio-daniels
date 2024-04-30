@@ -2,23 +2,47 @@
 
 .about{
     display: grid;
-    grid-template-columns: 60% 40%;
-    column-gap: 3rem;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    place-items: center;
+    row-gap: 5rem;
+
+    @include telefono{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    @include tablet{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    @include desktop{
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 100%;
+        column-gap: 3rem;
+    }
 
 
     .about-contenido{
         display: flex;
         flex-direction: column;
         row-gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        @include desktop{
+            align-items: flex-start;
+        }
 
         p{
             text-align: justify;
         }
 
         .titulos{
-            align-items: start;
+            width: 100%;
+            align-items: center;
             h1{
                 text-align: left;
+                font-size: 5vw;
             }
 
             h3{
@@ -31,12 +55,19 @@
                 height: 30px;
                 stroke: va.$color_bg2;
             }
+            @include desktop{
+                align-items: start;
+                h1{
+                    font-size: 3vw;
+                }
+            }
         }
 
         .about-lista{
             display: flex;
-            column-gap: 10rem;
-            padding-left: 2rem;
+            column-gap: 2rem;
+            padding-left: 3rem;
+
             .lista1{
                 display: flex;
                 align-items: center;
@@ -44,7 +75,8 @@
                 padding: 0.5rem 0;
                 svg{
                     width: 20px;
-                    height: 20px;stroke: va.$color_bg2;
+                    height: 20px;
+                    stroke: va.$color_bg2;
                 }
             }
         }
@@ -96,20 +128,28 @@
 //ELCTRONICA
 //---------------------------------------
 .modelo1{
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
     align-items: center;
     justify-content: center;
-    column-gap: 3rem;
-    .modelo1_img{
-
+    @include telefono{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    @include tablet{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        .about-contenido{
+            grid-row: 1/1;
+        }
     }
 
-}
-
-.modelo2{
-    grid-template-columns: 60% 40%;
-    .modelo2_img{
-        
+    @include desktop{
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 100%;
+        column-gap: 3rem;
+        .about-contenido{
+            grid-column: 2/2;
+        }
     }
-
 }

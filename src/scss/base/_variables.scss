@@ -1,29 +1,21 @@
+//Librerias
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap');
 
 
-// Fuentes
-$fuente_titulo1: 'Nunito', sans-serif, Helvetica;
-$fuente_parrafo1: 'Rubik', sans-serif, Helvetica;
+//Fuentes
+$fuente_titulo: 'Nunito', sans-serif, Helvetica;
+$fuente_parrafo: 'Rubik', sans-serif, Helvetica;
 $fuente_hack:'Anonymous Pro', Helvetica, sans-serif;
 
-
-// Tamaño de Media Queries
-$telefono: 480px;
-$tablet: 768px;
-$desktop: 1024px;
-
-// Colores
+//Colores Pagina
 $color_blanco:#ffffff;
 $color_negro:#000000;
-$color_titulo1:#11285a;
-$color_enlace1:#5D27FF;
-$color_bg1:#d4d2ff;
+$color_titulo:#11285a;
+$color_bg1:#091E3E;
 $color_bg2:#2990ff;
 $color_bg3:#d8edff;
 
-// Color Footer
-$color_footer:#091E3E;
 
 //Colores Tecnologias
 $color_web: #00fffb;
@@ -31,10 +23,14 @@ $color_github: #000000;
 $color_linkedin: #0077b5;
 $color_grabcad: #7007a8;
 
+//Colores Programas
+$color_arduino: #00979c;
+$color_autodesk: #F9690E;
+$color_powerbi: #F2C811;
+$color_unity: #000000;
+$color_spss: #0051BA;
 
-// Fuentes
-$delgada: 300;
-$regular : 400;
-$bold: 700;
-$black: 900;
-
+//Tamaño de Media Queries
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;

@@ -5,11 +5,19 @@
     position: relative;
     user-select: none;
     width: 85%;
-    height: 90%;
+    height: auto;
+    margin: 3rem 0;
 
     h1{
         line-height: 2;
+        font-size: 3vw;
     }
+    @include desktop{
+      align-items: start;
+      h1{
+          font-size: 2vw;
+      }
+  }
 
     p{
         color: va.$color_negro;
@@ -17,7 +25,7 @@
         font-size: 1.8rem;
         font-style: italic;
         padding: 0 3rem;
-        color: va.$color_titulo1;
+        color: va.$color_titulo;
     }
     .card-contenido{
         display: flex;
@@ -121,7 +129,7 @@
     padding: 1.5rem 1rem;
     margin-bottom: 2rem;
     font-size: 2rem;
-    font-family: va.$fuente_titulo1;
+    font-family: va.$fuente_titulo;
     font-weight: 700;
     transition: .3s;
     display: flex;

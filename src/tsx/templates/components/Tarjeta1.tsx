@@ -16,7 +16,7 @@ const Tarjeta1 = (varTarjeta1: Tarjeta1Props) => {
             <span></span>
             <div className="card-contenido">
                 <h1>{varTarjeta1.T1_Titulo}</h1>
-                <img src={imagenes[varTarjeta1.T1_Img]} alt="Imagen Logo" />
+                <img src={imagenes[varTarjeta1.T1_Img]} alt="Imagen Seccion" />
                 <p>{varTarjeta1.T1_Parrafo}</p>
                 
                 <hr></hr>

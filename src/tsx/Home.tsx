@@ -1,21 +1,19 @@
+//LIBRERIAS
 import Header from './templates/Header';
 import Footer from './templates/footer';
-import Cursos from './templates/Cursos';
 import About from './templates/About';
-import Electronica from './templates/Electronica';
+import Cursos from './templates/Cursos';
+import Seccion from './templates/seccion';
 import Tarjeta from './templates/components/tarjeta';
 
 
 function Home() {
-
-
   return (
     <>
-        {/* //HEADER */}
+        {/* //HEADER------------------------- */}
         <Header />
 
-         {/* PORTADA */}
-         {/* --------------------------------- */}
+        {/* //PORTADA------------------------- */}
          <section className='portada'>
           <div className='portada-bg1'>
             <div className='portada-contenido contenedor'>
@@ -33,9 +31,11 @@ function Home() {
           </div>
         </section>
 
-
+        {/* //SECCION PROGRAMACION------------------------- */}
         <About />
-        <Electronica 
+
+        {/* //SECCION ELECTRONICA------------------------- */}
+        <Seccion
           E_Tipo='modelo1'
           E_Icono='electronica'
           E_Titulo1='Profesión'
@@ -52,7 +52,9 @@ function Home() {
           E_Titulo3='Electrónica'
           E_Msg='"La Ingeniería en Electrónica es la disciplina que transforma la ciencia en algo útil para la humanidad."'
         />
-        <Electronica 
+
+        {/* //SECCION TELECOMUNICACIONES------------------------- */}
+        <Seccion
           E_Tipo='modelo2'
           E_Icono='telecomunicaciones'
           E_Titulo1='Profesión'
@@ -73,11 +75,11 @@ function Home() {
         <div className='titulos'>
           <h3>Hola soy Daniels</h3>
           <h1>Read The Latest Articles from Our Blog Post</h1>
-          <div className="wobbling-2"></div>
+          <div className="linea-efecto"></div>
         </div>
         <Cursos />
         
-
+        {/* //PIE DE PAGINA------------------------- */}
         <Footer />
     </>
   )

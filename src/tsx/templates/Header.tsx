@@ -14,11 +14,11 @@ const Header = () => {
             </div>
             <div className="header-enlaces">
                 <Link to="/portafolio-daniels"> Inicio</Link>
-                <Link to="/portafolio"> Portafolio</Link>
-                <Link to="/servicios"> Servicios</Link>
-                <Link to="/blog"> Blog</Link>
-                <Link to="/mi"> Sobre Mi</Link>
-                <Link to="/contacto"> Contacto</Link>
+                <Link to="/portafolio-daniels/portafolio"> Portafolio</Link>
+                <Link to="/portafolio-daniels/servicios"> Servicios</Link>
+                <Link to="/portafolio-daniels/blog"> Blog</Link>
+                <Link to="/portafolio-daniels/mi"> Sobre Mi</Link>
+                <Link to="/portafolio-daniels/contacto"> Contacto</Link>
             </div>
                 <div className='footer-social-1 header-btn'>
                  <Boton 

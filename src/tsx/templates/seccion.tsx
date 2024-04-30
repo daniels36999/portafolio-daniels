@@ -1,8 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import Iconos from './recursos/svg';
-//import imagenes from '../../assets/imagenes';
-import Tarjeta1 from './components/Tarjeta1';
+import Tarjeta1 from './components/tarjeta1';
 
 interface ElectronicaProps {
     E_Tipo:string;
@@ -21,7 +20,7 @@ interface ElectronicaProps {
     E_Titulo3:string;
     E_Msg:string;
   }
-const Electronica = (varElectronica:ElectronicaProps) => {
+const Seccion = (varElectronica:ElectronicaProps) => {
     // Componente de imagen
     const ImagenComponente = () => {
         return (
@@ -44,7 +43,7 @@ const Electronica = (varElectronica:ElectronicaProps) => {
                 <div className='titulos'>
                     <h3>{Iconos(varElectronica.E_Icono)} {varElectronica.E_Titulo1}</h3> 
                     <h1>{varElectronica.E_Titulo2}</h1>
-                    <div className="wobbling-2"></div>
+                    <div className="linea-efecto"></div>
                 </div>
                 <p>{varElectronica.E_Parrafo}</p>
                 <div className='about-lista'>
@@ -114,4 +113,4 @@ const Electronica = (varElectronica:ElectronicaProps) => {
     );
   };
 
-  export default Electronica
+  export default Seccion

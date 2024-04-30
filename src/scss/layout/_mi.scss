@@ -1,0 +1,62 @@
+@use 'base/variables' as va;
+
+.mi-contenido,
+.mi-datos,
+.mi-datos1,
+.mi-lista{
+    display: flex;
+}
+
+
+.mi{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 4rem;
+    place-items: center;
+
+    .mi-img{
+        img{
+            border-radius: 10px;
+        }
+    }
+
+    .mi-contenido{
+        flex-direction: column;
+        row-gap: 3rem;
+        p{
+            text-align: justify;
+        }
+
+        .mi-datos{
+            justify-content: center;
+            column-gap: 6rem;
+
+            .mi-datos1{
+                flex-direction: column;
+                row-gap: 2rem;
+            }
+
+
+        }
+
+        .mi-lista{
+            align-items: center;
+            column-gap: 1rem;
+
+            p{
+                font-weight: 700;
+            }
+
+            span{
+                font-weight: 400;
+            }
+
+            svg{
+                width: 25px;
+                height: 25px;
+                stroke: va.$color_bg2;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,135 @@
+@use 'base/variables' as va;
+//----------------------------------------------------
+
+.card2 {
+    width: 230px;
+    border-radius: 20px;
+    background: #1b233d;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    .top-section {
+        height: 150px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(45deg, va.$color_bg2 0%, #2954ff7d 100%);
+        position: relative;
+        .card2-img{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 80%;
+                border-radius: 12px;
+                opacity: 0.4;
+    
+            }
+        }
+
+      }
+
+    .icons2 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        .logo{
+            padding-left: 20px;
+            svg{
+                stroke: va.$color_blanco;
+                width: 22px;
+                height: 22px;
+            }
+        }
+
+        .social-media {
+            height: 100%;
+            padding: 8px 15px;
+            display: flex;
+            gap: 5px;
+            svg{
+                stroke: #1b233d;
+                width: 20px;
+                height: 20px;
+            }
+          }
+          
+      }
+
+      .bottom-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        margin-top: 15px;
+        padding: 10px 10px;
+
+        h3{
+            font-size: 2rem;
+            line-height: 1;
+            color: va.$color_bg2;
+        }
+
+        p{
+            text-align: center;
+            color: va.$color_blanco;
+            font-size: 1.2rem;
+
+            span{
+                color: #0062ff
+            }
+        }
+      }
+  }
+  
+  .card2 .top-section .border {
+    border-bottom-right-radius: 10px;
+    height: 30px;
+    width: 130px;
+    background: white;
+    background: #1b233d;
+    position: relative;
+    transform: skew(-40deg);
+    box-shadow: -10px -10px 0 0 #1b233d;
+  }
+  
+  .card2 .top-section .border::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: -15px;
+    background: rgba(255, 255, 255, 0);
+    border-top-left-radius: 10px;
+    box-shadow: -5px -5px 0 2px #1b233d;
+  }
+  
+  .card2 .top-section::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: rgba(255, 255, 255, 0);
+    height: 15px;
+    width: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: -5px -5px 0 2px #1b233d;
+  }
+  
+
+  
+  .card2 .top-section .icons2 .logo .top-section {
+    height: 100%;
+  }
+  
+  

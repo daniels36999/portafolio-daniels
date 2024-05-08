@@ -132,9 +132,15 @@
     grid-template-rows: 50% 50%;
     align-items: center;
     justify-content: center;
+    .about-contenido{
+        grid-row: 1/1;
+    }
     @include telefono{
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
+        .about-contenido{
+            grid-row: 1/1;
+        }
     }
     @include tablet{
         grid-template-columns: 100%;

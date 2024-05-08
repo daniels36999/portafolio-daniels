@@ -239,3 +239,32 @@ box-shadow: none;
   .btn3:active .btn3-span::before {
     background: va.$color_bg2;
   }
+
+
+  //BOTON MODELO 4
+  //---------------------------
+
+  .btn4 {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 10px;
+    color: #ffffff;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+  }
+  
+  .btn4:hover,
+  :focus {
+    color: #000000;
+    background: va.$color_bg2;
+    border: 1px solid #008cff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+      0 0 100px #008cff;
+  }
+  

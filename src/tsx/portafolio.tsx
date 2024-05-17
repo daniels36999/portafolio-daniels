@@ -22,6 +22,7 @@ function Portafolio() {
             T2_Icon3='row2I'
             T2_img='electronica'
             T2_Parrafo='En esta sección encontrarás proyectos relacionados con el área de la'
+            T2_Url='/portafolio-daniels/electronica'
           />
           <Tarjeta2 
             T2_Titulo='Telecomunicaciones'
@@ -30,6 +31,7 @@ function Portafolio() {
             T2_Icon3='row2I'
             T2_img='telecomunicaciones'
             T2_Parrafo='Aquí encontrarás proyectos relacionados con el área de las'
+            T2_Url=''
           />
           <Tarjeta2 
             T2_Titulo='Desarrollo Web | Front-End'
@@ -38,6 +40,7 @@ function Portafolio() {
             T2_Icon3='row2I'
             T2_img='bg'
             T2_Parrafo='Aquí encontrarás proyectos relacionados con el'
+            T2_Url=''
           />
 
           <Tarjeta2 
@@ -47,6 +50,7 @@ function Portafolio() {
             T2_Icon3='row2I'
             T2_img='bg'
             T2_Parrafo='En esta sección, encontrarás proyectos relacionados con análisis de datos e inteligencia empresarial en'
+            T2_Url=''
           />
 
         </div>

@@ -259,12 +259,17 @@ box-shadow: none;
     user-select: none;
   }
   
-  .btn4:hover,
-  :focus {
-    color: #000000;
-    background: va.$color_bg2;
-    border: 1px solid #008cff;
-    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
-      0 0 100px #008cff;
+  .btn4{
+    &:hover{
+        &:focus {
+            color: #000000;
+            background: va.$color_bg2;
+            border: 1px solid #008cff;
+            box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+            0 0 100px #008cff;
+        }
+
+    }
+
   }
   

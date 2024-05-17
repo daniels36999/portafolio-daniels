@@ -73,8 +73,8 @@ function Home() {
         />
 
         <div className='titulos'>
-          <h3>Hola soy Daniels</h3>
-          <h1>Read The Latest Articles from Our Blog Post</h1>
+          <h3>Proyectos</h3>
+          <h1>Lo Mejor de mis Proyectos</h1>
           <div className="linea-efecto"></div>
         </div>
         <Cursos />

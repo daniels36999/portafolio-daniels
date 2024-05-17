@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import iconosSvg from '../recursos/svg'
 import imagenes from '../../../assets/imagenes';
 
@@ -8,6 +10,7 @@ interface Tarjeta2Props {
     T2_img: string;
     T2_Titulo: string;
     T2_Parrafo:string;
+    T2_Url:string;
   }
 
 function Tarjeta2(varTarjeta2: Tarjeta2Props) {
@@ -33,9 +36,11 @@ function Tarjeta2(varTarjeta2: Tarjeta2Props) {
           <div className="bottom-section">
             <h3>{varTarjeta2.T2_Titulo}</h3>
             <p>{varTarjeta2.T2_Parrafo} <span>{varTarjeta2.T2_Titulo}.</span></p>
-            <button className="btn4" id="btn">
-                Saber Más...
-            </button>
+              <Link to={varTarjeta2.T2_Url}>
+                <button className="btn4" id="btn">
+                  Saber Más...
+                </button>
+              </Link>
           </div>
         </div>
     </>

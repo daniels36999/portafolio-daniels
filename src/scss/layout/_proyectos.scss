@@ -1,0 +1,28 @@
+@use 'base/variables' as va;
+
+.curso-proyecto{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    padding-top: 5rem;
+}
+
+.curso-proyecto2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem 6rem;
+    
+
+    @include telefono{
+        grid-template-columns: 1fr;
+      }
+
+    @include tablet{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    
+    @include desktop{
+        grid-template-columns: repeat(3, 1fr);
+      }
+}
+

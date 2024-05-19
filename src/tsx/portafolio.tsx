@@ -50,7 +50,7 @@ function Portafolio() {
             T2_Icon3='row2I'
             T2_img='bg'
             T2_Parrafo='En esta sección, encontrarás proyectos relacionados con análisis de datos e inteligencia empresarial en'
-            T2_Url=''
+            T2_Url='/portafolio-daniels/powerbi'
           />
 
         </div>

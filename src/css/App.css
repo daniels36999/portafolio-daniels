@@ -28,6 +28,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -1115,10 +1119,14 @@ button:hover {
   position: absolute;
   padding: 0.5rem 1rem;
   border: 1px solid black;
-  background-color: rgb(204, 57, 57);
+  background-color: rgba(17, 40, 90, 0.5647058824);
   width: 150px;
   left: 0%;
   top: 40%;
+}
+.curso .curso-img .curso-etiqueta a {
+  color: #2990ff;
+  font-weight: 700;
 }
 .curso .curso-descripcion {
   flex-direction: column;
@@ -1422,6 +1430,145 @@ button:hover {
   width: 25px;
   height: 25px;
   stroke: #2990ff;
+}
+
+.curso2,
+.curso2-img,
+.curso2-descripcion,
+.curso2-datos,
+.curso2-datos-inf {
+  display: flex;
+}
+
+.curso2 {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.curso2 .curso2-img {
+  position: relative;
+  justify-content: center;
+  width: 100%;
+}
+.curso2 .curso2-img img {
+  width: 100%;
+}
+.curso2 .curso2-descripcion {
+  flex-direction: column;
+  row-gap: 1.8rem;
+  padding: 1.5rem 2rem;
+  width: 100%;
+}
+.curso2 .curso2-descripcion h3 {
+  line-height: 1;
+  color: #091E3E;
+}
+.curso2 .curso2-descripcion p {
+  font-family: "Rubik", sans-serif, Helvetica;
+  font-size: 100%;
+  font-weight: 400;
+}
+.curso2 .curso2-descripcion a {
+  font-size: 20px;
+  font-weight: 700;
+}
+.curso2 .curso2-descripcion a span {
+  font-size: 25px;
+}
+.curso2 .curso2-descripcion a:hover {
+  color: rgb(255, 255, 255);
+}
+.curso2 .curso2-informacion {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.curso2 .curso2-informacion .curso2-inf {
+  padding-left: 1rem;
+  font-size: 1.3rem;
+}
+
+.curso2-datos {
+  column-gap: 2rem;
+}
+.curso2-datos .curso2-datos-inf {
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  font-size: 0.8em;
+}
+.curso2-datos .curso2-datos-inf svg {
+  width: 25px;
+  height: 25px;
+}
+
+.color-powerbi {
+  background-color: #F2C811;
+}
+.color-powerbi svg {
+  stroke: #534700;
+}
+.color-powerbi a {
+  color: #000000;
+}
+
+.curso-proyecto {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  padding-top: 5rem;
+}
+
+.curso-proyecto2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem 6rem;
+}
+@media (min-width: 480px) {
+  .curso-proyecto2 {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .curso-proyecto2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .curso-proyecto2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.superposicion {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.superponer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.img-superponer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-superponer img {
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .consola {

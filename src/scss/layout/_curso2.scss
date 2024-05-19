@@ -1,48 +1,33 @@
 @use 'base/variables' as va;
 //----------------------------------------------------
 
-.curso,
-.curso-img,
-.curso-descripcion,
-.curso-datos,
-.curso-datos-inf{
+.curso2,
+.curso2-img,
+.curso2-descripcion,
+.curso2-datos,
+.curso2-datos-inf{
     display: flex;
 }
 
 
-.curso{
+.curso2{
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
-    background-color: va.$color_bg3;
     width: 100%;
-    .curso-img{
+    border-radius: 20px;
+    overflow: hidden;
+    .curso2-img{
         position: relative;
         justify-content: center;
         width: 100%;
 
         img{
-            max-width: 100%;
-        }
-
-        .curso-etiqueta{
-            position: absolute;
-            padding: 0.5rem 1rem;
-            border: 1px solid black;
-            background-color: #11285a90;
-            width: 150px;
-            left: 0%;
-            top: 40%;
-
-            a{
-                color: va.$color_bg2;
-                font-weight: 700;
-            }
-        }
-        
+            width: 100%;
+        }       
     }
 
-    .curso-descripcion{
+    .curso2-descripcion{
         flex-direction: column;
         row-gap: 1.8rem;
         padding: 1.5rem 2rem;
@@ -61,21 +46,34 @@
 
         a{
             font-size: 20px;
-            font-weight: 400;
-            color: va.$color_bg2;
+            font-weight: 700;
 
             span{
                 font-size: 25px;
             }
+
+            &:hover{
+                color: rgb(255, 255, 255);
+            }
         }
         
     }
+    .curso2-informacion{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        .curso2-inf{
+            padding-left: 1rem;
+            font-size: 1.3rem;
+        }
+    }
+    
 }
 
 
-.curso-datos{
+.curso2-datos{
     column-gap: 2rem;
-    .curso-datos-inf{
+    .curso2-datos-inf{
         justify-content: center;
         align-items: center;
         column-gap: 6px;
@@ -83,9 +81,20 @@
         svg{
             width: 25px;
             height: 25px;
-            stroke: va.$color_bg2;
         }
     }
+}
+
+.color-powerbi{
+  background-color: va.$color_powerbi;
+  svg{
+    stroke: #534700;
+  }
+
+  a{
+    color: #000000;
+  }
+  
 }
 
 

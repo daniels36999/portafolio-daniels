@@ -27,10 +27,12 @@ function Powerbi() {
           </div>
           <div className='curso-informacion'>
             <div className='curso-inf-skill'>
-                <div className='curso-skill-icono'>
-                  {Iconos('analisis')}
+                <div className='curso-inf-titulo'>
+                  <div className='curso-skill-icono'>
+                    {Iconos('analisis')}
+                  </div>
+                  <h3>Análisis de Datos</h3>
                 </div>
-                <h3>Análisis de Datos</h3>
                 <p>El Análisis de Datos es el proceso de examinar y transformar datos para descubrir información útil y apoyar la toma de decisiones, utilizando técnicas estadísticas y de minería de datos. </p>
                 <h4>Aptitudes adquiridas</h4>
                 <ul>
@@ -45,10 +47,12 @@ function Powerbi() {
               <p>Power BI</p>
             </div>
             <div className='curso-inf-skill'>
+              <div className='curso-inf-titulo'>
                 <div className='curso-skill-icono'>
                   {Iconos('data')}
                 </div>
-              <h3>B. Intelligence</h3>
+                <h3>B. Intelligence</h3>
+              </div>
               <p>Es un conjunto de tecnologías y prácticas que analizan datos empresariales para proporcionar información precisa y oportuna, mejorando la eficiencia operativa y desarrollando estrategias efectivas.</p>
               <h4>Aptitudes adquiridas</h4>
               <ul>
@@ -74,11 +78,10 @@ function Powerbi() {
             <Curso2
                   C2_Color='color-powerbi'
                   C2_Img='pbta1'
-                  C2_Img2='pba1'
                   C2_Nombre='Daniel 2024'
                   C2_Fecha='Reportes | Ventas'
                   C2_Titulo='Ventas de Video Juegos'
-                  C2_Enlace='https://github.com/daniels36999'
+                  C2_Enlace='https://app.powerbi.com/view?r=eyJrIjoiMGNlOWQwYzYtZjZjYy00NTU0LWI1OTUtODA1ZjZjMzJhNzQxIiwidCI6IjNkMjg1ZTc1LTI0MDItNDAxYS1hYTgyLWIwMDI3OGY0OGE0MSIsImMiOjR9'
                   C2_Descripcion={`Ventas vs Año vs Región
                                    Ventas vs Género vs Pais
                                    Ventas vs Año vs Región`}/>
@@ -86,11 +89,10 @@ function Powerbi() {
             <Curso2
                   C2_Color='color-powerbi'
                   C2_Img='pbtb1'
-                  C2_Img2='pbb1'
                   C2_Nombre='Daniel 2024'
                   C2_Fecha='Análisis | DAX'
                   C2_Titulo='Indicadores Mundiales'
-                  C2_Enlace='https://github.com/daniels36999'
+                  C2_Enlace='https://app.powerbi.com/view?r=eyJrIjoiYTRlZmQ3MGMtNjNjZi00Y2RiLTllZjUtZWEyN2I1YWZlZjc5IiwidCI6IjNkMjg1ZTc1LTI0MDItNDAxYS1hYTgyLWIwMDI3OGY0OGE0MSIsImMiOjR9'
                   C2_Descripcion={`Análisis por Categorias
                                    Integración y Relaciones
                                    Esperanza de vida y mortalidad infantil`}/>
@@ -98,11 +100,10 @@ function Powerbi() {
             <Curso2
                   C2_Color='color-powerbi'
                   C2_Img='pbtc1'
-                  C2_Img2='pb1'
                   C2_Nombre='Daniel 2024'
                   C2_Fecha='Análisis | DAX'
                   C2_Titulo='Reporte RRHH'
-                  C2_Enlace='https://github.com/daniels36999'
+                  C2_Enlace='https://app.powerbi.com/view?r=eyJrIjoiZDMyNDQ4MzctNGIxMy00NGMwLTgzMjQtMzQyMjNkNWRhMDFmIiwidCI6IjNkMjg1ZTc1LTI0MDItNDAxYS1hYTgyLWIwMDI3OGY0OGE0MSIsImMiOjR9'
                   C2_Descripcion={`Análisis por Categorias
                                    Costos totales por sueldo
                                    Evaluación de Desempeño`}/>
@@ -110,11 +111,10 @@ function Powerbi() {
             <Curso2
                   C2_Color='color-powerbi'
                   C2_Img='pbtd1'
-                  C2_Img2='pb1'
                   C2_Nombre='Daniel 2024'
                   C2_Fecha='Análisis | DAX'
                   C2_Titulo='Finanzas Personales'
-                  C2_Enlace='https://github.com/daniels36999'
+                  C2_Enlace='https://app.powerbi.com/view?r=eyJrIjoiOWUwZDAwOTctNGUyYS00YzhjLTllZmYtYjVlN2JiMzBhNGMzIiwidCI6IjNkMjg1ZTc1LTI0MDItNDAxYS1hYTgyLWIwMDI3OGY0OGE0MSIsImMiOjR9'
                   C2_Descripcion={`Ingresos, Utilidad, Saldo
                                    Metas, Presupuesto, Esp. Financiera
                                    Reportes de Finanzas Personales`}/>

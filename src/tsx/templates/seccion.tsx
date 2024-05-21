@@ -32,6 +32,7 @@ const Seccion = (varElectronica:ElectronicaProps) => {
                     T1_Titulo= {varElectronica.E_Titulo3}
                     T1_Parrafo={varElectronica.E_Msg}
                     T1_Boton='Saber Más...'
+                    T1_Url={varElectronica.E_Url}
                 />
             </div>
         );

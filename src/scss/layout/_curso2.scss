@@ -17,6 +17,7 @@
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 8px 8px 8px rgb(81, 81, 81);
     .curso2-img{
         position: relative;
         justify-content: center;
@@ -110,9 +111,9 @@
   }
 
   .color-telecomunicaciones{
-    background-color: va.$color_bg2;
+    background-color: rgb(163, 188, 226);
     svg{
-      stroke: #0000ff;
+      stroke: #0059ff;
     }
   
     a{
@@ -122,9 +123,9 @@
   }
 
   .color-web{
-    background-color: va.$color_bg2;
+    background-color: #2990ff73;
     svg{
-      stroke: #92dfdf;
+      stroke: #4f76f7;
     }
   
     a{

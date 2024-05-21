@@ -40,6 +40,15 @@
         opacity: 0.9;
         width: 90%;
     }
+
+    a{
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      &:hover{
+        cursor:default;
+      }
+    }
   }
   
   @keyframes keyframes-rotate-blubs {

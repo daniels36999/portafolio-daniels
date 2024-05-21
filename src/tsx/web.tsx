@@ -27,10 +27,12 @@ function Web() {
           </div>
           <div className='curso-informacion'>
             <div className='curso-inf-skill'>
-                <div className='curso-skill-icono'>
-                  {Iconos('analisis')}
+                <div className='curso-inf-titulo'>
+                  <div className='curso-skill-icono'>
+                    {Iconos('html')}
+                  </div>
+                  <h3>Front-End</h3>
                 </div>
-                <h3>Front-end</h3>
                 <p>El Front-End es la parte visual y interactiva de un sitio web, desarrollada con HTML5, CSS3 y JavaScript. Es responsable de la estructura, el diseño y la interacción del usuario. </p>
                 <h4>Aptitudes adquiridas</h4>
                 <ul>
@@ -45,10 +47,12 @@ function Web() {
               <p>Desarrollo Web</p>
             </div>
             <div className='curso-inf-skill'>
-                <div className='curso-skill-icono'>
-                  {Iconos('data')}
+            <div className='curso-inf-titulo'>
+                  <div className='curso-skill-icono'>
+                    {Iconos('pc')}
+                  </div>
+                  <h3>Back-End</h3>
                 </div>
-              <h3>Back-End</h3>
               <p>El Back-End gestiona la lógica del servidor y la base de datos con PHP y MySQL. Procesa datos y maneja la autenticación, comunicándose con el front-end para ofrecer contenido dinámico.</p>
               <h4>Aptitudes adquiridas</h4>
               <ul>
@@ -73,51 +77,35 @@ function Web() {
             {/*  */}
             <Curso2
                   C2_Color='color-web'
-                  C2_Img='pbta1'
-                  C2_Img2='pba1'
+                  C2_Img='wbtb1'
                   C2_Nombre='Daniel 2024'
-                  C2_Fecha='Reportes | Ventas'
-                  C2_Titulo='Ventas de Video Juegos'
-                  C2_Enlace='https://github.com/daniels36999'
-                  C2_Descripcion={`Ventas vs Año vs Región
-                                   Ventas vs Género vs Pais
-                                   Ventas vs Año vs Región`}/>
+                  C2_Fecha='Front-End'
+                  C2_Titulo='Portafolio Digital'
+                  C2_Enlace='https://daniels36999.github.io/portafolio-daniels/'
+                  C2_Descripcion={`HTML, CSS, SASS, GULP
+                                   React, Vite
+                                   Paguina Web Responsiva`}/>
+            <Curso2
+                  C2_Color='color-web'
+                  C2_Img='wbtc1'
+                  C2_Nombre='Daniel 2024'
+                  C2_Fecha='Front-End'
+                  C2_Titulo='Front-End Store'
+                  C2_Enlace='https://daniels36999.github.io/PaguinaWeb_Proyecto_2/'
+                  C2_Descripcion={`Introducción a BEM
+                                   Grid, Flexbox
+                                   Globales, Media Queries`}/>
 
             <Curso2
                   C2_Color='color-web'
-                  C2_Img='pbtb1'
-                  C2_Img2='pbb1'
-                  C2_Nombre='Daniel 2024'
-                  C2_Fecha='Análisis | DAX'
-                  C2_Titulo='Indicadores Mundiales'
-                  C2_Enlace='https://github.com/daniels36999'
-                  C2_Descripcion={`Análisis por Categorias
-                                   Integración y Relaciones
-                                   Esperanza de vida y mortalidad infantil`}/>
-
-            <Curso2
-                  C2_Color='color-web'
-                  C2_Img='pbtc1'
-                  C2_Img2='pb1'
-                  C2_Nombre='Daniel 2024'
-                  C2_Fecha='Análisis | DAX'
-                  C2_Titulo='Reporte RRHH'
-                  C2_Enlace='https://github.com/daniels36999'
-                  C2_Descripcion={`Análisis por Categorias
-                                   Costos totales por sueldo
-                                   Evaluación de Desempeño`}/>
-
-            <Curso2
-                  C2_Color='color-web'
-                  C2_Img='pbtd1'
-                  C2_Img2='pb1'
-                  C2_Nombre='Daniel 2024'
-                  C2_Fecha='Análisis | DAX'
-                  C2_Titulo='Finanzas Personales'
-                  C2_Enlace='https://github.com/daniels36999'
-                  C2_Descripcion={`Ingresos, Utilidad, Saldo
-                                   Metas, Presupuesto, Esp. Financiera
-                                   Reportes de Finanzas Personales`}/>
+                  C2_Img='wbta1'
+                  C2_Nombre='Daniel 2023'
+                  C2_Fecha='Front-End'
+                  C2_Titulo='Sitio Freelancer'
+                  C2_Enlace='https://daniels36999.github.io/PaguinaWeb_Proyecto_1/'
+                  C2_Descripcion={`Estilos en CSS, Media Queries
+                                   Enlaces y Navegacion
+                                   Formularios en HTML`}/>
 
           </div>
 

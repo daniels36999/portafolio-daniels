@@ -23,6 +23,7 @@
     
     @include desktop{
         grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
       }
 }
 
@@ -46,23 +47,14 @@
   .curso-inf-skill{
     display: flex;
     flex-direction: column;
-    align-items: center;
     row-gap: 1rem;
+    align-self: flex-start;
 
-    > :nth-child(5) {
-      align-self: flex-start;
-    }
-
-    @include telefono{
-      align-items: center;
-    }
-    @include tablet{
-      align-items: center;
+    h4{
+      text-align: left;
+      padding-left: 1rem;
     }
 
-    @include desktop{
-      align-items: flex-start;
-    }
     p{
       text-align: justify;
     }
@@ -86,19 +78,28 @@
       height: 20vw;
     }
     p{
-      font-size: 3vw;
+      font-size-adjust: 3vw;
       color: va.$color_blanco;
+    }
+    img{
+      width: 30%;
     }
 
     @include telefono{
       background-color: va.$color_bg1;
       grid-row: 1/1;
+      img{
+        width: 30%;
+      }
     }
     @include tablet{
       grid-column: 2/3;
       background-color: transparent;
       p{
         color: va.$color_negro;
+      }
+      img{
+        width: 80%;
       }
     }
 
@@ -108,24 +109,37 @@
       p{
         color: va.$color_negro;
       }
+      img{
+        width: 80%;
+      }
     }
 
   }
 
 }
-
-.curso-skill-icono{
+.curso-inf-titulo{
   display: flex;
-  background-color: va.$color_bg2;
-  border-radius: 10px;
-  padding: 1rem;
-
-  svg{
-    max-width: 50px;
-    max-height: 50px;
-    stroke: va.$color_blanco;
+  flex-direction: row;
+  column-gap: 1rem;
+  align-items: center;
+  h3{
+    text-align: left;
   }
+  .curso-skill-icono{
+    display: flex;
+    background-color: va.$color_bg2;
+    border-radius: 10px;
+    padding: 1rem;
+  
+    svg{
+      max-width: 50px;
+      max-height: 50px;
+      stroke: va.$color_blanco;
+    }
+  }
+
 }
+
 
 .curso-certificado{
   display: grid;
@@ -152,6 +166,7 @@
     width: 90%;
     border:3px solid va.$color_bg2;
     border-radius: 20px;
+    box-shadow: 8px 8px 20px rgb(81, 81, 81);
   }
 }
 
@@ -165,9 +180,15 @@
       display: flex; 
       column-gap: 15px;
       .curso-skill-icono{
+        display: flex;
+        align-items: center;
+        background-color: va.$color_bg2;
+        padding: 0.8rem;
+        border-radius: 10px;
         svg{
           max-width: 25px;
           max-height: 25px;
+          stroke: va.$color_blanco;
         }
       }
     }

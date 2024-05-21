@@ -23,7 +23,7 @@ function Footer() {
                 <div className="footer-social-1 tarjeta-btn">
                     <Boton 
                         tipo='btn1'
-                        enlace='https://portafolio-daniels.netlify.app/'
+                        enlace='https://daniels36999.github.io/portafolio-daniels/'
                         svg='web'
                         clase=''nombre=''/>
 

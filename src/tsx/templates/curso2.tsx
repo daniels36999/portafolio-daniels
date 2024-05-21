@@ -6,7 +6,6 @@ import imagenes from '../../assets/imagenes';
 interface Curso2Props {
     C2_Color: string;
     C2_Img: string;
-    C2_Img2: string;
     C2_Nombre: string;
     C2_Fecha:string;
     C2_Titulo:string;
@@ -21,10 +20,10 @@ const Curso2 = (varCurso: Curso2Props) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [imageUrl, setImageUrl] = useState<string>('');
   
-    const handleClick = (url: string) => {
-      setImageUrl(url);
-      setIsOpen(true);
-    };
+    // const handleClick = (url: string) => {
+    //   setImageUrl(url);
+    //   setIsOpen(true);
+    // };
   
     const closeOverlay = () => {
       setIsOpen(false);
@@ -34,7 +33,7 @@ const Curso2 = (varCurso: Curso2Props) => {
         <>
         <div className={`curso2 ${varCurso.C2_Color}`}>
             <div className="curso2-img">
-                <a onClick={() => handleClick(imagenes[varCurso.C2_Img2])}>
+                <a>
                     <img src={imagenes[varCurso.C2_Img]} alt={`Imagen ${varCurso.C2_Img}`} />
                 </a>
             </div>
@@ -45,7 +44,7 @@ const Curso2 = (varCurso: Curso2Props) => {
                         <p>{varCurso.C2_Nombre}</p>
                     </div>
                     <div className='curso2-datos-inf'>
-                        {iconosSvg('date')}
+                        {iconosSvg('pc')}
                         <p>{varCurso.C2_Fecha}</p>
                     </div>
                 </div>
@@ -58,7 +57,7 @@ const Curso2 = (varCurso: Curso2Props) => {
                         ))}
                     </div>
                 </div>
-                <a href="">Leer Mas <span>&rarr;</span></a>
+                <a href={varCurso.C2_Enlace} target="_blank" rel="noopener noreferrer">Leer Mas <span>&rarr;</span></a>
             </div>
         </div >
         {/* FUNCION DE SUPERPONER */}

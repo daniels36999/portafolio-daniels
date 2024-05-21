@@ -11,6 +11,8 @@ import Contacto from './contacto';
 
 //RUTA PORTAFOLIO
 import Electronica from './electronica';
+import Telecomunicaciones from './telecomunicaciones';
+import Web from './web';
 import Powerbi from './powerbi';
 
 
@@ -30,6 +32,8 @@ function App() {
 
             {/* RUTAS PORTAFOLIO */}
             <Route path="/portafolio-daniels/electronica" element={<Electronica />} />
+            <Route path="/portafolio-daniels/telecomunicaciones" element={<Telecomunicaciones />} />
+            <Route path="/portafolio-daniels/web" element={<Web />} />
             <Route path="/portafolio-daniels/powerbi" element={<Powerbi />} />
         </Routes>     
       </BrowserRouter>      

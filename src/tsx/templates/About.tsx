@@ -55,7 +55,7 @@ const About = () => {
                 </div>
                 <div className='about-link'>
                     <button className='btn3'>
-                        <Link to="#" > Portafolio &rarr;</Link>
+                        <Link to="/portafolio-daniels/portafolio" > Portafolio &rarr;</Link>
                         <span className='btn3-span'></span>
                     </button>
                      

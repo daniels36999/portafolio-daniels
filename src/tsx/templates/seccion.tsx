@@ -19,6 +19,7 @@ interface ElectronicaProps {
     E_Img:string;
     E_Titulo3:string;
     E_Msg:string;
+    E_Url:string;
   }
 const Seccion = (varElectronica:ElectronicaProps) => {
     // Componente de imagen
@@ -87,7 +88,7 @@ const Seccion = (varElectronica:ElectronicaProps) => {
                 </div>
                 <div className='about-link'>
                     <button className='btn3'>
-                        <Link to="#" > Portafolio &rarr;</Link>
+                        <Link to={`${varElectronica.E_Url}`} > Portafolio &rarr;</Link>
                         <span className='btn3-span'></span>
                     </button>
                      

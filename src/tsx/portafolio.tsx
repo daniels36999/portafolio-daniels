@@ -31,7 +31,7 @@ function Portafolio() {
             T2_Icon3='row2I'
             T2_img='telecomunicaciones'
             T2_Parrafo='Aquí encontrarás proyectos relacionados con el área de las'
-            T2_Url=''
+            T2_Url='/portafolio-daniels/telecomunicaciones'
           />
           <Tarjeta2 
             T2_Titulo='Desarrollo Web | Front-End'
@@ -40,7 +40,7 @@ function Portafolio() {
             T2_Icon3='row2I'
             T2_img='bg'
             T2_Parrafo='Aquí encontrarás proyectos relacionados con el'
-            T2_Url=''
+            T2_Url='/portafolio-daniels/web'
           />
 
           <Tarjeta2 

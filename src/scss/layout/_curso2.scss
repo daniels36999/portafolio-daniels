@@ -97,6 +97,42 @@
   
 }
 
+.color-electronica{
+    background-color: #75c300;
+    svg{
+      stroke: #0c5300;
+    }
+  
+    a{
+      color: #ffffff;
+    }
+    
+  }
+
+  .color-telecomunicaciones{
+    background-color: va.$color_bg2;
+    svg{
+      stroke: #0000ff;
+    }
+  
+    a{
+      color: #0a025c;
+    }
+    
+  }
+
+  .color-web{
+    background-color: #9bc4fa;
+    svg{
+      stroke: #3940fb;
+    }
+  
+    a{
+      color: #000000;
+    }
+    
+  }
+
 
    
  

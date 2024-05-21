@@ -4,7 +4,7 @@ import Curso2 from './templates/curso2';
 
 
 
-function Electronica() {
+function Web() {
 
 
   return (
@@ -13,14 +13,14 @@ function Electronica() {
         <Header />
         <div className='curso-proyecto contenedor'>
           <div className='titulos'>
-            <h3>Electrónica</h3>
-            <h1>Proyectos realizados en el área de la Electrónica</h1>
+            <h3>Desarrollo Web | Front-End</h3>
+            <h1>Proyectos realizados en el Área de Desarrollo Web</h1>
             <div className="linea-efecto"></div>
           </div>
           <div className='curso-proyecto2'>
             {/*  */}
             <Curso2
-                  C2_Color='color-electronica'
+                  C2_Color='color-web'
                   C2_Img='pbta1'
                   C2_Img2='pba1'
                   C2_Nombre='Daniel 2024'
@@ -32,7 +32,7 @@ function Electronica() {
                                    Ventas vs Año vs Región`}/>
 
             <Curso2
-                  C2_Color='color-electronica'
+                  C2_Color='color-web'
                   C2_Img='pbtb1'
                   C2_Img2='pbb1'
                   C2_Nombre='Daniel 2024'
@@ -44,7 +44,7 @@ function Electronica() {
                                    Esperanza de vida y mortalidad infantil`}/>
 
             <Curso2
-                  C2_Color='color-electronica'
+                  C2_Color='color-web'
                   C2_Img='pbtc1'
                   C2_Img2='pb1'
                   C2_Nombre='Daniel 2024'
@@ -56,7 +56,7 @@ function Electronica() {
                                    Evaluación de Desempeño`}/>
 
             <Curso2
-                  C2_Color='color-electronica'
+                  C2_Color='color-web'
                   C2_Img='pbtd1'
                   C2_Img2='pb1'
                   C2_Nombre='Daniel 2024'
@@ -76,4 +76,4 @@ function Electronica() {
   )
 }
 
-export default Electronica
+export default Web

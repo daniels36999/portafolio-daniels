@@ -51,6 +51,7 @@ function Home() {
           E_Img='electronica'
           E_Titulo3='Electrónica'
           E_Msg='"La Ingeniería en Electrónica es la disciplina que transforma la ciencia en algo útil para la humanidad."'
+          E_Url='/portafolio-daniels/portafolio'
         />
 
         {/* //SECCION TELECOMUNICACIONES------------------------- */}
@@ -70,6 +71,7 @@ function Home() {
           E_Img='telecomunicaciones'
           E_Titulo3='Telecomunicaciones'
           E_Msg='"La Ingeniería en Telecomunicaciones es el motor que impulsa la comunicación global, conectando personas, culturas y negocios."'
+          E_Url='/portafolio-daniels/portafolio'
         />
 
         <div className='titulos'>

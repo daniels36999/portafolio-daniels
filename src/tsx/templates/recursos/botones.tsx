@@ -38,6 +38,15 @@ const Boton = (propiedades:propiedadesProps) => {
         );
         return boton;
 
+        case 'btn3': //Boton Modelo 3
+        boton = (
+            <button className="boton3" onClick={() => clicEnlace(propiedades.enlace)}>
+                <span className="boton3-icon">{iconosSvg(propiedades.svg)}</span>
+                <span className="boton3-text">{propiedades.nombre}</span>
+            </button>
+        );
+        return boton;
+
         default:
             boton = null;
     }

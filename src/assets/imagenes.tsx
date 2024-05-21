@@ -5,6 +5,7 @@ import bg from './img/bg.jpg';
 import electronica from './img/electronica.jpg';
 import telecomunicaciones from './img/telecomunicaciones.jpg';
 import certificado1 from './img/certificado1.jpg';
+import certificado2 from './img/certificado2.jpg';
 
 //IMAGENES MINIATURA POWER BI
 import pbta1 from './imgP/pbta1.png';
@@ -27,6 +28,7 @@ const imagenes : { [key: string]: string } = {
   "electronica": electronica,
   "telecomunicaciones": telecomunicaciones,
   "certificado1": certificado1,
+  "certificado2": certificado2,
 
   //POWER BI
   //------------------------------------

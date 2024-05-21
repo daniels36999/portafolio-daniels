@@ -1593,10 +1593,10 @@ button:hover {
 }
 
 .color-web {
-  background-color: #9bc4fa;
+  background-color: #2990ff;
 }
 .color-web svg {
-  stroke: #3940fb;
+  stroke: #92dfdf;
 }
 .color-web a {
   color: #000000;
@@ -1771,7 +1771,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  row-gap: 3rem;
+  row-gap: 2rem;
 }
 .curso-certificado .curso-cert-inf .curso-cert-cont {
   display: flex;

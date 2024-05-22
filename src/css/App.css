@@ -926,6 +926,15 @@ button:hover {
 }
 .header .header-enlaces a:hover {
   color: #2990ff;
+  font-size: 21px;
+}
+.header .header-enlaces .estado-activo {
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  background-color: rgba(41, 144, 255, 0.5176470588);
+}
+.header .header-enlaces .estado-activo:hover {
+  color: white;
 }
 .header .header-btn {
   display: flex;

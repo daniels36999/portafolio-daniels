@@ -1,16 +1,20 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { useState} from 'react';
 
 import imagenes from '../../assets/imagenes';
 import Boton from './recursos/botones';
 import Iconos from './recursos/svg';
 
 const Header = () => {
-
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
+
     const toggleMenu = () => {
           setIsMenuOpen(!isMenuOpen);
     };
+
+
+
 
     return(
         <header className="header">
@@ -23,12 +27,12 @@ const Header = () => {
                  {Iconos('amburguesa')}
             </div>
             <div className={`header-enlaces ${isMenuOpen ? 'activa-anburguesa' : ''}`}>
-                <Link to="/"> Inicio</Link>
-                <Link to="/portafolio"> Portafolio</Link>
-                <Link to="/servicios"> Servicios</Link>
-                <Link to="/blog"> Blog</Link>
-                <Link to="/mi"> Sobre Mi</Link>
-                <Link to="/contacto"> Contacto</Link>
+                <Link to="/" className={location.pathname === "/" ? "estado-activo" : ""}>Inicio</Link>
+                <Link to="/portafolio" className={location.pathname === "/portafolio" ? "estado-activo" : ""}>Portafolio</Link>
+                <Link to="/servicios" className={location.pathname === "/servicios" ? "estado-activo" : ""}>Servicios</Link>
+                <Link to="/blog" className={location.pathname === "/blog" ? "estado-activo" : ""}>Blog</Link>
+                <Link to="/mi" className={location.pathname === "/mi" ? "estado-activo" : ""}>Sobre Mi</Link>
+                <Link to="/contacto" className={location.pathname === "/contacto" ? "estado-activo" : ""}>Contacto</Link>
             </div>
             <div className='footer-social-1 header-btn'>
                 <Boton 

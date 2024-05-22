@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+//import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import '../css/App.css'
 
 //PRINCIPAL
@@ -20,23 +21,25 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
+      {/* <BrowserRouter> */}
         <Routes>
           {/* PRINCIPAL */}
-            <Route path="/portafolio-daniels" element={<Home />} />
-            <Route path="/portafolio-daniels/portafolio" element={<Portafolio />} />
-            <Route path="/portafolio-daniels/servicios" element={<Servicios />} />
-            <Route path="/portafolio-daniels/blog" element={<Blog />} />
-            <Route path="/portafolio-daniels/mi" element={<Mi />} />
-            <Route path="/portafolio-daniels/contacto" element={<Contacto />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/portafolio" element={<Portafolio />} />
+            <Route path="/servicios" element={<Servicios />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/mi" element={<Mi />} />
+            <Route path="/contacto" element={<Contacto />} />
 
             {/* RUTAS PORTAFOLIO */}
-            <Route path="/portafolio-daniels/electronica" element={<Electronica />} />
-            <Route path="/portafolio-daniels/telecomunicaciones" element={<Telecomunicaciones />} />
-            <Route path="/portafolio-daniels/web" element={<Web />} />
-            <Route path="/portafolio-daniels/powerbi" element={<Powerbi />} />
+            <Route path="/electronica" element={<Electronica />} />
+            <Route path="/telecomunicaciones" element={<Telecomunicaciones />} />
+            <Route path="/web" element={<Web />} />
+            <Route path="/powerbi" element={<Powerbi />} />
         </Routes>     
-      </BrowserRouter>      
+      {/* </BrowserRouter>  */}
+      </HashRouter>     
   </div> 
   )
 }

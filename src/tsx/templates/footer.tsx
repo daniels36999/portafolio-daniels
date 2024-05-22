@@ -73,12 +73,12 @@ function Footer() {
                      <div className="linea-efecto"></div>
                 </div>
                 <div className="footer-links foot-pos3">
-                    <Link className="btn-link" to="/portafolio-daniels" >{Iconos('rowD')} Inicio </Link>
-                    <Link className="btn-link" to="/portafolio-daniels/portafolio" >{Iconos('rowD')} Portafolio </Link>
-                    <Link className="btn-link" to="/portafolio-daniels/servicios" >{Iconos('rowD')} Servicios </Link>
-                    <Link className="btn-link" to="/portafolio-daniels/blog" >{Iconos('rowD')} Blog </Link>
-                    <Link className="btn-link" to="/portafolio-daniels/mi" >{Iconos('rowD')} Sobre Mi </Link>
-                    <Link className="btn-link" to="/portafolio-daniels/contacto" >{Iconos('rowD')} Contacto </Link>
+                    <Link className="btn-link" to="/" >{Iconos('rowD')} Inicio </Link>
+                    <Link className="btn-link" to="/portafolio" >{Iconos('rowD')} Portafolio </Link>
+                    <Link className="btn-link" to="/servicios" >{Iconos('rowD')} Servicios </Link>
+                    <Link className="btn-link" to="/blog" >{Iconos('rowD')} Blog </Link>
+                    <Link className="btn-link" to="/mi" >{Iconos('rowD')} Sobre Mi </Link>
+                    <Link className="btn-link" to="/contacto" >{Iconos('rowD')} Contacto </Link>
                 </div>
             </div>
 
@@ -102,7 +102,7 @@ function Footer() {
                         enlace=''/>
                 </div>
                 <div className='footer-logo'>
-                    <Link  to="/portafolio-daniels" >
+                    <Link  to="/" >
                         <img src={imagenes.logo} alt="Imagen Logo" />
                     </Link>
                 </div>

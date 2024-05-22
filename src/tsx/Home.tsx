@@ -52,7 +52,8 @@ function Home() {
           E_Img='electronica'
           E_Titulo3='Electrónica'
           E_Msg='"La Ingeniería en Electrónica es la disciplina que transforma la ciencia en algo útil para la humanidad."'
-          E_Url='/portafolio-daniels/electronica'
+          E_Url='/portafolio'
+          E_Url2='/electronica'
         />
 
         {/* //SECCION TELECOMUNICACIONES------------------------- */}
@@ -72,7 +73,8 @@ function Home() {
           E_Img='telecomunicaciones'
           E_Titulo3='Telecomunicaciones'
           E_Msg='"La Ingeniería en Telecomunicaciones es el motor que impulsa la comunicación global, conectando personas, culturas y negocios."'
-          E_Url='/portafolio-daniels/telecomunicaciones'
+          E_Url='/portafolio'
+          E_Url2='/telecomunicaciones'
         />
 
         <div className='titulos'>
@@ -91,7 +93,7 @@ function Home() {
             T2_Icon3='row2I'
             T2_img='wbtb1'
             T2_Parrafo='Aquí encontrarás proyectos relacionados con el'
-            T2_Url='/portafolio-daniels/web'
+            T2_Url='/web'
           />
           <Tarjeta2 
             T2_Titulo='Power BI'
@@ -100,7 +102,7 @@ function Home() {
             T2_Icon3='row2I'
             T2_img='pbta1'
             T2_Parrafo='En esta sección, encontrarás proyectos relacionados con análisis de datos e inteligencia empresarial en'
-            T2_Url='/portafolio-daniels/powerbi'
+            T2_Url='/powerbi'
           />
 
           <Tarjeta2 
@@ -110,7 +112,7 @@ function Home() {
             T2_Icon3='row2I'
             T2_img='electronica'
             T2_Parrafo='En esta sección encontrarás proyectos relacionados con el área de la'
-            T2_Url='/portafolio-daniels/electronica'
+            T2_Url='/electronica'
           />
           <Tarjeta2 
             T2_Titulo='Telecomunicaciones'
@@ -119,7 +121,7 @@ function Home() {
             T2_Icon3='row2I'
             T2_img='telecomunicaciones'
             T2_Parrafo='Aquí encontrarás proyectos relacionados con el área de las'
-            T2_Url='/portafolio-daniels/telecomunicaciones'
+            T2_Url='/telecomunicaciones'
           />
         </div>
         

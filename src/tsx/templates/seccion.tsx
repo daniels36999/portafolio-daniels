@@ -20,6 +20,7 @@ interface ElectronicaProps {
     E_Titulo3:string;
     E_Msg:string;
     E_Url:string;
+    E_Url2:string;
   }
 const Seccion = (varElectronica:ElectronicaProps) => {
     // Componente de imagen
@@ -32,7 +33,7 @@ const Seccion = (varElectronica:ElectronicaProps) => {
                     T1_Titulo= {varElectronica.E_Titulo3}
                     T1_Parrafo={varElectronica.E_Msg}
                     T1_Boton='Saber Más...'
-                    T1_Url={varElectronica.E_Url}
+                    T1_Url={varElectronica.E_Url2}
                 />
             </div>
         );

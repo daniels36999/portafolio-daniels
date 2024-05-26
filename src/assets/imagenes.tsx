@@ -10,6 +10,8 @@ import certificado0 from './img/certificado0.jpg';
 import certificado1 from './img/certificado1.jpg';
 import certificado2 from './img/certificado2.jpg';
 
+import git from './gif/git.gif';
+
 //IMAGENES MINIATURA POWER BI
 import pbta1 from './imgP/pbta1.png';
 import pbtb1 from './imgP/pbtb1.jpg';
@@ -39,6 +41,8 @@ const imagenes : { [key: string]: string } = {
   "certificado0": certificado0,
   "certificado1": certificado1,
   "certificado2": certificado2,
+
+  "git": git,
 
   //POWER BI
   //------------------------------------

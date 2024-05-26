@@ -32,6 +32,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -618,6 +626,54 @@ button:hover {
   border: 3px solid #000000;
 }
 
+.boton4 {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: rgba(0, 179, 255, 0.426);
+}
+
+.boton4:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.boton4:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boton4::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.boton4::after {
+  background-color: rgba(0, 179, 255, 0.426);
+}
+
+.boton4:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
 .btn3 {
   border: none;
   display: block;
@@ -1152,6 +1208,15 @@ button:hover {
   text-align: center;
 }
 
+.seccion-portafolio {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+.seccion-portafolio p {
+  text-align: justify;
+}
+
 .portafolio-opciones {
   display: flex;
   justify-content: center;
@@ -1338,27 +1403,6 @@ button:hover {
   height: 20px;
   stroke: #2990ff;
 }
-.about .about-contenido .about-contacto {
-  display: flex;
-  align-items: center;
-  column-gap: 3rem;
-}
-.about .about-contenido .about-contacto .ab-contacto-img {
-  line-height: 0;
-}
-.about .about-contenido .about-contacto .ab-contacto-img svg {
-  width: 60px;
-  height: 60px;
-  stroke: #2990ff;
-}
-.about .about-contenido .about-contacto .ab-contacto-desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.about .about-contenido .about-contacto .ab-contacto-desc h3 {
-  font-size: 1.6rem;
-}
 .about .about-consola {
   display: flex;
   align-items: center;
@@ -1372,6 +1416,28 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.about-contacto {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+.about-contacto .ab-contacto-img {
+  line-height: 0;
+}
+.about-contacto .ab-contacto-img svg {
+  width: 60px;
+  height: 60px;
+  stroke: #2990ff;
+}
+.about-contacto .ab-contacto-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-contacto .ab-contacto-desc h3 {
+  font-size: 1.6rem;
 }
 
 .modelo1 {
@@ -1412,28 +1478,164 @@ button:hover {
   }
 }
 
-.mi-contenido,
-.mi-datos,
-.mi-datos1,
-.mi-lista {
+.cont {
   display: flex;
+  flex-direction: column;
+  column-gap: 4rem;
+  row-gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .cont {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .cont {
+    flex-direction: row;
+  }
+}
+
+.cont-descripcion {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: center;
+}
+.cont-descripcion p {
+  text-align: justify;
+}
+.cont-descripcion .mi-datos {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 2rem 6rem;
+}
+
+.formulario1 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.703);
+}
+.formulario1 h2 {
+  font-size: 2.5rem;
+}
+.formulario1 .btn3 {
+  width: 80%;
+}
+
+.form1-contenido {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 4rem 5rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.form1-contenido .form1-input {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.form1-contenido .form1-input svg {
+  position: absolute;
+  top: 11px;
+  stroke: rgb(51, 50, 55);
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.inputField1 {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(173, 173, 173);
+  margin: 10px 0;
+  color: black;
+  font-size: 1em;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+
+.inputField1:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(0, 133, 190);
+}
+
+.inputArea1 {
+  height: 120px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.inputArea1:focus {
+  outline: none;
+  border: 2px solid rgb(0, 133, 190);
+}
+
+.formulario1::before {
+  position: absolute;
+  content: "";
+  width: 500px;
+  height: 500px;
+  background-color: rgba(0, 179, 255, 0.426);
+  transform: rotate(45deg);
+  left: -294px;
+  bottom: 55px;
+  z-index: -1;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+}
+
+.seccion-mi,
+.mi-contenido {
+  display: flex;
+}
+
+.seccion-mi {
+  flex-direction: column;
+  row-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.seccion-mi .contacto-banner h4 {
+  text-align: left;
+}
+.seccion-mi .contacto-banner span {
+  font-weight: 400;
+}
+.seccion-mi .contacto-banner .contacto-boton {
+  row-gap: 1rem;
+}
+.seccion-mi .contacto-banner .contactto-svg {
+  display: flex;
+  background-color: #2990ff;
+  padding: 0.5rem;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.seccion-mi .contacto-banner .contactto-svg svg {
+  stroke: rgb(255, 255, 255);
+  max-width: 30px;
+  max-height: 30px;
 }
 
 .mi {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: auto auto;
   gap: 4rem;
   place-items: center;
-}
-.mi h1, .mi h3 {
-  line-height: 1.5;
-  margin-bottom: 1rem;
 }
 @media (min-width: 480px) {
   .mi {
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: auto auto;
   }
 }
 @media (min-width: 768px) {
@@ -1444,59 +1646,21 @@ button:hover {
 }
 @media (min-width: 1024px) {
   .mi {
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 100%;
-    gap: 4rem;
   }
+}
+.mi .mi-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mi .mi-img img {
   border-radius: 10px;
-}
-.mi .mi-contenido {
-  flex-direction: column;
-  row-gap: 3rem;
+  width: 80%;
 }
 .mi .mi-contenido p {
   text-align: justify;
-}
-.mi .mi-contenido .mi-datos {
-  justify-content: center;
-  gap: 6rem;
-  flex-direction: column;
-}
-@media (min-width: 480px) {
-  .mi .mi-contenido .mi-datos {
-    flex-direction: column;
-  }
-}
-@media (min-width: 768px) {
-  .mi .mi-contenido .mi-datos {
-    flex-direction: row;
-  }
-}
-@media (min-width: 1024px) {
-  .mi .mi-contenido .mi-datos {
-    flex-direction: row;
-  }
-}
-.mi .mi-contenido .mi-datos .mi-datos1 {
-  flex-direction: column;
-  row-gap: 2rem;
-}
-.mi .mi-contenido .mi-lista {
-  align-items: center;
-  column-gap: 1rem;
-}
-.mi .mi-contenido .mi-lista p {
-  font-weight: 700;
-}
-.mi .mi-contenido .mi-lista span {
-  font-weight: 400;
-}
-.mi .mi-contenido .mi-lista svg {
-  width: 25px;
-  height: 25px;
-  stroke: #2990ff;
 }
 
 .curso2,
@@ -1792,25 +1956,26 @@ button:hover {
   align-items: flex-start;
   row-gap: 2rem;
 }
-.curso-certificado .curso-cert-inf .curso-cert-cont {
+
+.curso-cert-cont {
   display: flex;
   column-gap: 15px;
 }
-.curso-certificado .curso-cert-inf .curso-cert-cont .curso-skill-icono {
+.curso-cert-cont span {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.curso-cert-cont .curso-skill-icono {
   display: flex;
   align-items: center;
   background-color: #2990ff;
   padding: 0.8rem;
   border-radius: 10px;
 }
-.curso-certificado .curso-cert-inf .curso-cert-cont .curso-skill-icono svg {
+.curso-cert-cont .curso-skill-icono svg {
   max-width: 25px;
   max-height: 25px;
   stroke: #ffffff;
-}
-.curso-certificado .curso-cert-inf span {
-  font-size: 2rem;
-  font-weight: normal;
 }
 
 .curso-proy-descripcion p {
@@ -1845,6 +2010,103 @@ button:hover {
 .img-superponer img {
   max-width: 80%;
   max-height: 80%;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.contacto .contacto-introduccion {
+  padding-top: 2rem;
+}
+.contacto .contacto-introduccion p {
+  text-align: justify;
+}
+@media (min-width: 480px) {
+  .contacto .contacto-introduccion p {
+    text-align: justify;
+  }
+}
+@media (min-width: 768px) {
+  .contacto .contacto-introduccion p {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto .contacto-introduccion p {
+    text-align: center;
+  }
+}
+
+.contacto-banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 5rem;
+  padding-top: 4rem;
+}
+@media (min-width: 480px) {
+  .contacto-banner {
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-top: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .contacto-banner {
+    flex-direction: row;
+    column-gap: 1.5rem;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto-banner {
+    flex-direction: row;
+    column-gap: 5rem;
+    padding-top: 0;
+  }
+}
+.contacto-banner .contacto-boton {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+.contacto-banner .contacto-boton .contacto-btn1 {
+  display: flex;
+  column-gap: 2.5rem;
+  align-items: center;
+}
+.contacto-banner .contacto-boton .contacto-btn1 .grabcad {
+  background-color: rgb(40, 162, 154);
+}
+.contacto-banner .contacto-boton .contacto-btn1 .grabcad-bd {
+  border-color: rgb(33, 104, 14);
+}
+.contacto-banner .contacto-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.contacto-banner .contacto-img img {
+  max-width: 250px;
+}
+@media (min-width: 480px) {
+  .contacto-banner .contacto-img {
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .contacto-banner .contacto-img {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto-banner .contacto-img {
+    padding-bottom: 0;
+  }
 }
 
 .consola {

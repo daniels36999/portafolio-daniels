@@ -81,30 +81,6 @@
             }
         }
 
-        .about-contacto{
-            display: flex;
-            align-items: center;
-            column-gap: 3rem;
-
-            .ab-contacto-img{
-                line-height: 0;
-                svg{
-                    width: 60px;
-                    height: 60px;
-                    stroke: va.$color_bg2;
-                }
-            }
-
-            .ab-contacto-desc{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                h3{
-                    font-size: 1.6rem;
-                }
-
-            }
-        }
     }
 
     .about-consola{
@@ -121,6 +97,31 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+.about-contacto{
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+
+    .ab-contacto-img{
+        line-height: 0;
+        svg{
+            width: 60px;
+            height: 60px;
+            stroke: va.$color_bg2;
+        }
+    }
+
+    .ab-contacto-desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3{
+            font-size: 1.6rem;
+        }
+
     }
 }
 

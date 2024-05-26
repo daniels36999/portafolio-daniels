@@ -1,0 +1,84 @@
+@use 'base/variables' as va;
+
+.formulario1{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.703);
+    h2{
+        font-size: 2.5rem;
+    }
+    .btn3{
+        width: 80%;
+    }
+}
+
+.form1-contenido{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 4rem 5rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    .form1-input{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        
+        svg{
+            position: absolute;
+            top: 11px;
+            stroke: rgb(51, 50, 55);
+            max-width: 20px;
+            max-height: 20px;
+        }
+
+    }
+}
+    
+
+.inputField1 {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(173, 173, 173);
+    margin: 10px 0;
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding-left: 30px;
+  }
+  
+  .inputField1:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(0, 133, 190);
+  }
+
+  .inputArea1{
+    height: 120px;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .inputArea1:focus {
+    outline: none;
+    border: 2px solid rgb(0, 133, 190);
+  }
+
+  //BAGROUND
+  .formulario1::before {
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 179, 255, 0.426);
+    transform: rotate(45deg);
+    left: -294px;
+    bottom: 55px;
+    z-index: -1;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+  }

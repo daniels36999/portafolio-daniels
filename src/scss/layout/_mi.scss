@@ -1,28 +1,57 @@
 @use 'base/variables' as va;
-
-.mi-contenido,
-.mi-datos,
-.mi-datos1,
-.mi-lista{
+.seccion-mi,
+.mi-contenido{
     display: flex;
+}
+
+.seccion-mi{
+    flex-direction: column;
+    row-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    .contacto-banner{
+
+        h4{
+            text-align: left;
+        }
+        
+        span{
+            font-weight: 400;
+        }
+
+        .contacto-boton{
+            row-gap: 1rem;
+        }
+
+        .contactto-svg{
+            display: flex;
+            background-color: va.$color_bg2;
+            padding: 0.5rem;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            svg{
+                stroke: rgb(255, 255, 255);
+                max-width: 30px;
+                max-height: 30px;
+            }
+        }
+
+    }
 }
 
 
 .mi{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: auto auto;
     gap: 4rem;
     place-items: center;
 
-    h1,h3{
-        line-height: 1.5;
-        margin-bottom: 1rem;
-    }
-
     @include telefono{
         grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: auto auto;
     }
     @include tablet{
         grid-template-columns: 30% 70%;
@@ -30,63 +59,24 @@
     }
 
     @include desktop{
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 30% 70%;
         grid-template-rows: 100%;
-        gap: 4rem;
-        }
+        //gap: 4rem;
+    }
 
     .mi-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img{
             border-radius: 10px;
+            width: 80%;
         }
     }
 
     .mi-contenido{
-        flex-direction: column;
-        row-gap: 3rem;
         p{
             text-align: justify;
-        }
-
-        .mi-datos{
-            justify-content: center;
-            gap: 6rem;
-            flex-direction: column;
-            @include telefono{
-                flex-direction: column;
-            }
-            @include tablet{
-                flex-direction: row;
-            }
-        
-            @include desktop{
-                flex-direction: row;
-                }
-
-            .mi-datos1{
-                flex-direction: column;
-                row-gap: 2rem;
-            }
-
-
-        }
-
-        .mi-lista{
-            align-items: center;
-            column-gap: 1rem;
-            p{
-                font-weight: 700;
-            }
-
-            span{
-                font-weight: 400;
-            }
-
-            svg{
-                width: 25px;
-                height: 25px;
-                stroke: va.$color_bg2;
-            }
         }
     }
 

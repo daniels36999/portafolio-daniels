@@ -1,0 +1,39 @@
+@use 'base/variables' as va;
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    column-gap: 4rem;
+    row-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+
+    @include telefono{
+
+    }
+    @include tablet{
+        flex-direction: row;
+    }
+
+    @include desktop{
+        flex-direction: row;
+    }
+
+}
+
+.cont-descripcion{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    p{
+        text-align: justify;
+    }
+    .mi-datos{
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        gap: 2rem 6rem;
+    }
+
+}

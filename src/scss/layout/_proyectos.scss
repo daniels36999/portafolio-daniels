@@ -175,27 +175,25 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 2rem;
-    
-    .curso-cert-cont{
-      display: flex; 
-      column-gap: 15px;
-      .curso-skill-icono{
-        display: flex;
-        align-items: center;
-        background-color: va.$color_bg2;
-        padding: 0.8rem;
-        border-radius: 10px;
-        svg{
-          max-width: 25px;
-          max-height: 25px;
-          stroke: va.$color_blanco;
-        }
-      }
-    }
-
-    span{
-      font-size: 2rem;
-      font-weight: normal;
+  }
+}
+.curso-cert-cont{
+  display: flex; 
+  column-gap: 15px;
+  span{
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  .curso-skill-icono{
+    display: flex;
+    align-items: center;
+    background-color: va.$color_bg2;
+    padding: 0.8rem;
+    border-radius: 10px;
+    svg{
+      max-width: 25px;
+      max-height: 25px;
+      stroke: va.$color_blanco;
     }
   }
 }

@@ -331,7 +331,25 @@ const svg_link= (
 </svg>
 );
 
+const svg_telefono= (
+    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-phone-plus" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+    <path d="M15 6h6m-3 -3v6" />
+    </svg>
+    );
 
+const svg_apellido= (
+    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user-scan" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M10 9a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+    <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
+    <path d="M4 16v2a2 2 0 0 0 2 2h2" />
+    <path d="M16 4h2a2 2 0 0 1 2 2v2" />
+    <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
+    <path d="M8 16a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2" />
+    </svg>
+    );
 
     switch (iconName) {
         case 'github':
@@ -398,6 +416,10 @@ const svg_link= (
             return svg_multimetro;
         case 'grado':
             return svg_grado;
+        case 'telefono':
+            return svg_telefono;
+        case 'apellido':
+            return svg_apellido;
         case '':
             return null;
         default:

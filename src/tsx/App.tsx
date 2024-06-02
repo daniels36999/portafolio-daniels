@@ -9,6 +9,7 @@ import Servicios from './servicios';
 import Blog from './blog';
 import Mi from './mi';
 import Contacto from './contacto';
+import Certificado from './certificado';
 
 //RUTA PORTAFOLIO
 import Electronica from './electronica';
@@ -31,6 +32,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/mi" element={<Mi />} />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="/certificado" element={<Certificado />} />
 
             {/* RUTAS PORTAFOLIO */}
             <Route path="/electronica" element={<Electronica />} />

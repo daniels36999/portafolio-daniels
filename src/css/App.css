@@ -40,6 +40,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -875,6 +881,27 @@ button:hover {
   }
 }
 
+.web-construccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.559);
+  margin: 5rem 0;
+  padding: 5rem 0;
+}
+.web-construccion img {
+  width: 50%;
+}
+
+.msg-construccion {
+  text-align: justify;
+  margin: 4rem 0;
+  color: rgb(203, 186, 0);
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr;
@@ -938,6 +965,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
+  column-gap: 1.5rem;
   justify-content: center;
   align-items: center;
   visibility: hidden;
@@ -975,7 +1003,6 @@ button:hover {
 }
 .header .header-enlaces a {
   display: flex;
-  margin: 0 10px 0 10px;
   font-size: 20px;
   color: #ffffff;
   font-family: "Rubik", sans-serif, Helvetica;
@@ -1010,6 +1037,57 @@ button:hover {
     grid-column: 3/4;
     grid-row: 1/2;
   }
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .drop-boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.8rem;
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "Rubik", sans-serif, Helvetica;
+  height: 45px;
+}
+.dropdown .drop-boton:hover {
+  color: #2990ff;
+  font-size: 21px;
+}
+.dropdown .drop-boton svg {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  z-index: 5;
+}
+.dropdown-content p {
+  color: rgb(255, 255, 255);
+}
+.dropdown-content a {
+  float: none;
+  padding: 12px 12px;
+}
+.dropdown-content a:hover {
+  background-color: rgba(41, 144, 255, 0.5176470588);
+}
+.dropdown-content a:hover p {
+  color: rgb(255, 255, 255);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .footer,
@@ -1234,10 +1312,10 @@ button:hover {
 
 .curso {
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #d8edff;
-  width: 100%;
+  max-width: 350px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.559);
 }
 .curso .curso-img {
   position: relative;
@@ -1269,6 +1347,8 @@ button:hover {
 .curso .curso-descripcion h3 {
   line-height: 1;
   color: #091E3E;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.47);
 }
 .curso .curso-descripcion p {
   font-family: "Rubik", sans-serif, Helvetica;
@@ -1297,27 +1377,6 @@ button:hover {
   width: 25px;
   height: 25px;
   stroke: #2990ff;
-}
-
-.cursos {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 4rem 6rem;
-}
-@media (min-width: 480px) {
-  .cursos {
-    grid-template-columns: 1fr;
-  }
-}
-@media (min-width: 768px) {
-  .cursos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1024px) {
-  .cursos {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .about {
@@ -1591,6 +1650,25 @@ button:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
 }
 
+.full-formulario {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 99;
+}
+.full-formulario img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
 .seccion-mi,
 .mi-contenido {
   display: flex;
@@ -1658,6 +1736,11 @@ button:hover {
 .mi .mi-img img {
   border-radius: 10px;
   width: 80%;
+}
+.mi .mi-contenido {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
 }
 .mi .mi-contenido p {
   text-align: justify;
@@ -1983,12 +2066,7 @@ button:hover {
   font-family: "Nunito", sans-serif, Helvetica;
 }
 
-.superposicion {
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-
-.superponer {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -1996,20 +2074,35 @@ button:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 2rem;
   z-index: 1000;
 }
-
-.img-superponer {
-  position: relative;
+.overlay .overlay-svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(35, 35, 35);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 2rem;
 }
-.img-superponer img {
-  max-width: 80%;
-  max-height: 80%;
+.overlay .overlay-svg:hover {
+  cursor: pointer;
+}
+.overlay .overlay-svg p {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-family: "Nunito", sans-serif, Helvetica;
+  font-size: 3rem;
+}
+
+.fullscreen-image {
+  max-width: 50%;
+  cursor: pointer;
 }
 
 .contacto {
@@ -2107,6 +2200,98 @@ button:hover {
   .contacto-banner .contacto-img {
     padding-bottom: 0;
   }
+}
+
+.seccion-certificado {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2rem;
+  row-gap: 4rem;
+  justify-content: center;
+}
+@media (min-width: 480px) {
+  .seccion-certificado {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .seccion-certificado {
+    grid-template-columns: 40% 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .seccion-certificado {
+    grid-template-columns: 25% 75%;
+  }
+}
+.seccion-certificado p {
+  text-align: justify;
+}
+.seccion-certificado .certificado-opciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  row-gap: 3rem;
+  padding: 4rem 0;
+  background-color: rgba(41, 144, 255, 0.5176470588);
+}
+.seccion-certificado .certificado-opciones .titulos h1 {
+  font-size: 2.5rem;
+}
+.seccion-certificado .certificado-opciones .titulos h3 {
+  font-size: 1.8rem;
+}
+.seccion-certificado .certificado-opciones .certificado-aptitudes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+.seccion-certificado .certificado-opciones .certificado-aptitudes .aptitud {
+  display: flex;
+  place-items: center;
+  column-gap: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.712);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+.seccion-certificado .certificado-opciones .certificado-aptitudes .aptitud p {
+  font-size: 90%;
+  color: rgb(51, 180, 255);
+}
+.seccion-certificado .certificado-opciones .certificado-aptitudes svg {
+  width: 15px;
+  height: 15px;
+  stroke: rgb(255, 255, 255);
+}
+
+.certificado-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.certificado-contenido .certificado-descripcion {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  row-gap: 1rem;
+}
+.certificado-contenido .certificado-descripcion img {
+  max-width: 250px;
+}
+.certificado-contenido span {
+  color: #2990ff;
+  font-family: "Anonymous Pro", Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.certificado-curso {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
 }
 
 .consola {
@@ -2516,5 +2701,103 @@ button:hover {
 
 .card2 .top-section .icons2 .logo .top-section {
   height: 100%;
+}
+
+.tarjeta3,
+.tarj3-titulo,
+.tarjeta3-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta3 {
+  padding: 2rem 3rem;
+  border: solid 2px rgb(0, 68, 136);
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px rgba(25, 41, 185, 0.684);
+  row-gap: 0.5rem;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.tarjeta3 h3 {
+  color: rgb(0, 68, 136);
+  font-size: 100%;
+}
+.tarjeta3 .tarjeta3-contenido {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  column-gap: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.tarjeta3 .tarjeta3-contenido p {
+  color: rgb(0, 124, 249);
+  font-size: 90%;
+}
+.tarjeta3 .tarjeta3-btn .boton4 {
+  padding: 0.5rem 1.8rem;
+  text-transform: none;
+  background-color: rgba(75, 156, 255, 0.725);
+}
+.tarjeta3 svg {
+  stroke: #2990ff;
+  width: 40px;
+  height: 40px;
+}
+
+.notificationCard {
+  width: 250px;
+  height: 280px;
+  background: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 35px;
+  gap: 10px;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.584);
+  border-radius: 20px;
+}
+.notificationCard svg {
+  width: 70px;
+  height: 70px;
+}
+
+.notificationHeading {
+  color: #091E3E;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.notificationPara {
+  color: rgb(133, 133, 133);
+  font-size: 0.7em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.AllowBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 25px;
+  background-color: #2990ff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 2rem 2rem;
+}
+
+.AllowBtn:hover {
+  background-color: rgb(0, 98, 255);
 }
 /*# sourceMappingURL=app.css.map */

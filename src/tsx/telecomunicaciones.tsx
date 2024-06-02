@@ -1,6 +1,6 @@
 import Header from './templates/Header';
 import Footer from './templates/footer';
-import Curso2 from './templates/curso2';
+// import Curso2 from './templates/curso2';
 import imagenes from '../assets/imagenes';
 import Iconos from './templates/recursos/svg';
 import Boton from './templates/recursos/botones';
@@ -82,7 +82,7 @@ function Telecomunicaciones() {
           </div>
           <div className='curso-proyecto2'>
             {/*  */}
-            <Curso2
+            {/* <Curso2
                   C2_Color='color-telecomunicaciones'
                   C2_Img='pbta1'
                   C2_Nombre='Daniel 2024'
@@ -91,7 +91,9 @@ function Telecomunicaciones() {
                   C2_Enlace='https://app.powerbi.com/view?r=eyJrIjoiMGNlOWQwYzYtZjZjYy00NTU0LWI1OTUtODA1ZjZjMzJhNzQxIiwidCI6IjNkMjg1ZTc1LTI0MDItNDAxYS1hYTgyLWIwMDI3OGY0OGE0MSIsImMiOjR9'
                   C2_Descripcion={`Ventas vs Año vs Región
                                    Ventas vs Género vs Pais
-                                   Ventas vs Año vs Región`}/>
+                                   Ventas vs Año vs Región`}/> */}
+
+            <p className='msg-construccion'>"&#9888; Actualmente estamos recopilando mis proyectos más destacados, los cuales estarán disponibles próximamente en mi página. Muy pronto podrás explorar el trabajo que he realizado a lo largo de mi carrera y en los cursos que he completado &#128218;. Mientras tanto, si deseas saber más, puedes consultar mi GitHub o LinkedIn para obtener más detalles sobre mi experiencia y habilidades &#128296;."</p>
           </div>
 
           {/* //SECCION CERTIFICADO*/}

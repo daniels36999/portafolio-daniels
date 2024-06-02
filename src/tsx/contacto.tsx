@@ -4,8 +4,6 @@ import Seccion2 from './templates/seccion2';
 import imagenes from '../assets/imagenes';
 import Boton from './templates/recursos/botones';
 
-
-
 function Contacto() {
 
 

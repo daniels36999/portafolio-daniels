@@ -13,9 +13,6 @@ const Header = () => {
           setIsMenuOpen(!isMenuOpen);
     };
 
-
-
-
     return(
         <header className="header">
             <div className="header-logo">
@@ -31,20 +28,26 @@ const Header = () => {
                 <Link to="/portafolio" className={location.pathname === "/portafolio" ? "estado-activo" : ""}>Portafolio</Link>
                 <Link to="/servicios" className={location.pathname === "/servicios" ? "estado-activo" : ""}>Servicios</Link>
                 <Link to="/blog" className={location.pathname === "/blog" ? "estado-activo" : ""}>Blog</Link>
-                <Link to="/mi" className={location.pathname === "/mi" ? "estado-activo" : ""}>Sobre Mi</Link>
+                <div className="dropdown">
+                    <button className={`${location.pathname === "/mi" || location.pathname === "/certificado" ? "estado-activo" : ""} drop-boton`}>Sobre Mi {Iconos('dropdown')}</button>
+                    <div className="dropdown-content">
+                        <Link  to="/mi" className='drop-link'><p>Sobre Mi</p></Link>
+                        <Link to="/certificado" className='drop-link'><p>Certificados</p></Link>
+                    </div>
+                </div>
                 <Link to="/contacto" className={location.pathname === "/contacto" ? "estado-activo" : ""}>Contacto</Link>
             </div>
             <div className='footer-social-1 header-btn'>
                 <Boton 
-                tipo='btn1'
-                enlace='https://www.linkedin.com/in/daniel-patricio-yautibug-65a656209/'
-                svg='linkedin'
-                clase=''nombre=''/>
-            <Boton 
-                tipo='btn1'
-                enlace='https://github.com/daniels36999/'
-                svg='github'
-                clase=''nombre=''/>
+                    tipo='btn1'
+                    enlace='https://www.linkedin.com/in/daniel-patricio-yautibug-65a656209/'
+                    svg='linkedin'
+                    clase=''nombre=''/>
+                <Boton 
+                    tipo='btn1'
+                    enlace='https://github.com/daniels36999/'
+                    svg='github'
+                    clase=''nombre=''/>
         </div>         
         </header >
     );

@@ -59,6 +59,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 0.5rem;
+    column-gap: 1.5rem;
     justify-content: center;
     align-items: center;
 
@@ -93,7 +94,6 @@
     }
     a{
       display: flex;
-      margin: 0 10px 0 10px;
       font-size: 20px;
       color: va.$color_blanco;
       font-family: va.$fuente_parrafo;
@@ -136,6 +136,66 @@
     }
   }
 
+}
+
+
+//LISTA DESPLEGABLE HEADER
+//-----------------------------------
+.dropdown {
+  float: left;
+  overflow: hidden;
+  .drop-boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .8rem;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: va.$fuente_parrafo;
+    height:45px;
+
+    &:hover{
+      color: va.$color_bg2;
+      font-size: 21px;
+    }
+    svg{
+      max-width: 20px;
+      max-height: 20px;
+    }
+  }
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  z-index: 5;
+  p{
+    color: rgb(255, 255, 255);
+  }
+
+  a{
+    float: none;
+    padding: 12px 12px;
+
+    &:hover{
+      background-color: #2990ff84;
+      p{
+        color: rgb(255, 255, 255);
+      }
+
+    }
+  }
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 

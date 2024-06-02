@@ -50,7 +50,7 @@ const About = () => {
                     </div>
                     <div className='ab-contacto-desc'>
                         <span>Más Información...</span>   
-                        <h3>dyautibug.fie@unach.edu.ec</h3>   
+                        <h3>dx.daniels14@gmail.com</h3>   
                     </div>
                 </div>
                 <div className='about-link'>

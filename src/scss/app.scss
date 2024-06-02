@@ -11,8 +11,7 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/portafolio';
-@import 'layout/curso';
-@import 'layout/cursos';
+@import 'layout/diploma';
 @import 'layout/seccion';
 @import 'layout/seccion2';
 @import 'layout/formulario';
@@ -21,6 +20,7 @@
 @import 'layout/proyectos';
 @import 'layout/superposicion';
 @import 'layout/contacto';
+@import 'layout/certificados';
 
 
 //COMPONENTES
@@ -28,4 +28,7 @@
 @import 'components/tarjeta';
 @import 'components/tarjeta1';
 @import 'components/tarjeta2';
+@import 'components/tarjeta3';
+@import 'components/tarjeta4';
+
 

@@ -107,6 +107,8 @@ function Web() {
                                    Enlaces y Navegacion
                                    Formularios en HTML`}/>
 
+            <p className='msg-construccion'>"&#9888; Actualmente estamos recopilando mis proyectos más destacados, los cuales estarán disponibles próximamente en mi página. Muy pronto podrás explorar el trabajo que he realizado a lo largo de mi carrera y en los cursos que he completado &#128218;. Mientras tanto, si deseas saber más, puedes consultar mi GitHub o LinkedIn para obtener más detalles sobre mi experiencia y habilidades &#128296;."</p>
+
           </div>
 
           {/* //SECCION CERTIFICADO*/}

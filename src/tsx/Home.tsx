@@ -48,7 +48,7 @@ function Home() {
           E_Lista4='Circuitos Electrónicos'
           E_Lista5='Instalaciones Eléctricas'
           E_Lista6='PCB'
-          E_Correo='dyautibug.fie@unach.edu.ec'
+          E_Correo='dx.daniels14@gmail.com'
           E_Img='electronica'
           E_Titulo3='Electrónica'
           E_Msg='"La Ingeniería en Electrónica es la disciplina que transforma la ciencia en algo útil para la humanidad."'
@@ -69,7 +69,7 @@ function Home() {
           E_Lista4='Antenas'
           E_Lista5='CST Studio, Python'
           E_Lista6='Administracion de SO.'
-          E_Correo='dyautibug.fie@unach.edu.ec'
+          E_Correo='dx.daniels14@gmail.com'
           E_Img='telecomunicaciones'
           E_Titulo3='Telecomunicaciones'
           E_Msg='"La Ingeniería en Telecomunicaciones es el motor que impulsa la comunicación global, conectando personas, culturas y negocios."'
@@ -82,9 +82,11 @@ function Home() {
           <h1>Lo Mejor de mis Proyectos</h1>
           <div className="linea-efecto"></div>
         </div>
+
         {/* <Cursos /> */}
 
         <div className='portafolio-opciones contenedor'>
+        <p>En esta sección se encuentran los portafolios correspondientes a mi carrera y los cursos realizados. Aquí podrás explorar una selección de mis trabajos más destacados, que reflejan mi experiencia y habilidades adquiridas a lo largo de mi formación profesional y académica.</p>
           {/*  */}
           <Tarjeta2 
             T2_Titulo='Desarrollo Web | Front-End'

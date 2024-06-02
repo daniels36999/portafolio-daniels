@@ -9,8 +9,14 @@ import telecomunicaciones2 from './img/telecomunicaciones2.png';
 import certificado0 from './img/certificado0.jpg';
 import certificado1 from './img/certificado1.jpg';
 import certificado2 from './img/certificado2.jpg';
+import certificado3 from './img/certificado3.jpg';
+import certificado4 from './img/certificado4.jpg';
+import certificado5 from './img/certificado5.jpg';
+import certificado6 from './img/certificado6.jpg';
+import cursos from './img/cursos.png';
 
 import git from './gif/git.gif';
+import construccion from './gif/construccion.gif';
 
 //IMAGENES MINIATURA POWER BI
 import pbta1 from './imgP/pbta1.png';
@@ -41,8 +47,15 @@ const imagenes : { [key: string]: string } = {
   "certificado0": certificado0,
   "certificado1": certificado1,
   "certificado2": certificado2,
+  "certificado3": certificado3,
+  "certificado4": certificado4,
+  "certificado5": certificado5,
+  "certificado6": certificado6,
+  "cursos": cursos,
+
 
   "git": git,
+  "construccion": construccion,
 
   //POWER BI
   //------------------------------------

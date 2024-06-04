@@ -34,7 +34,7 @@ function Footer() {
                         clase=''nombre=''/>
                     <Boton 
                         tipo='btn1'
-                        enlace='https://www.linkedin.com/in/daniel-patricio-yautibug-65a656209/'
+                        enlace='https://www.linkedin.com/in/daniels-yautibug/'
                         svg='linkedin'
                         clase=''nombre=''/>
 

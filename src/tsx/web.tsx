@@ -85,12 +85,24 @@ function Web() {
                   C2_Descripcion={`HTML, CSS, SASS, GULP
                                    React, Vite
                                    Paguina Web Responsiva`}/>
+
+            <Curso2
+                  C2_Color='color-web'
+                  C2_Img='wbtd1'
+                  C2_Nombre='Daniel 2024'
+                  C2_Fecha='Front-End'
+                  C2_Titulo='Blog Café'
+                  C2_Enlace='https://daniels36999.github.io/PaguinaWeb_Proyecto_3/'
+                  C2_Descripcion={`Estilos en CSS, Media Queries
+                                   Enlaces y Navegacion
+                                   Formularios en HTML`}/>
+
             <Curso2
                   C2_Color='color-web'
                   C2_Img='wbtc1'
                   C2_Nombre='Daniel 2024'
                   C2_Fecha='Front-End'
-                  C2_Titulo='Front-End Store'
+                  C2_Titulo='Store Online'
                   C2_Enlace='https://daniels36999.github.io/PaguinaWeb_Proyecto_2/'
                   C2_Descripcion={`Introducción a BEM
                                    Grid, Flexbox

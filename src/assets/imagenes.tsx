@@ -19,19 +19,16 @@ import git from './gif/git.gif';
 import construccion from './gif/construccion.gif';
 
 //IMAGENES MINIATURA POWER BI
-import pbta1 from './imgP/pbta1.png';
-import pbtb1 from './imgP/pbtb1.jpg';
-import pbtc1 from './imgP/pbtc1.jpg';
-import pbtd1 from './imgP/pbtd1.png';
+import pbta1 from './webp/pbta1.png';
+import pbtb1 from './webp/pbtb1.jpg';
+import pbtc1 from './webp/pbtc1.jpg';
+import pbtd1 from './webp/pbtd1.png';
 
-import wbta1 from './imgP/wbta1.jpg';
-import wbtb1 from './imgP/wbtb1.jpg';
-import wbtc1 from './imgP/wbtc1.jpg';
+import wbta1 from './webp/web1.webp';
+import wbtb1 from './webp/web0.webp';
+import wbtc1 from './webp/web2.webp';
+import wbtd1 from './webp/web3.webp';
 
-//IMAGENES NORMAL POWER BI
-import pba1 from './imgG/pba1.png';
-import pbb1 from './imgG/pbb1.jpg';
-import pbb2 from './imgG/pbb2.jpg';
 
 
 
@@ -68,12 +65,7 @@ const imagenes : { [key: string]: string } = {
   "wbta1":wbta1,
   "wbtb1":wbtb1,
   "wbtc1":wbtc1,
-
-  //GRANDE
-  "pba1":pba1,
-  "pbb1":pbb1,
-  "pbb2":pbb2
-
+  "wbtd1":wbtd1,
 };
 
 export default imagenes;

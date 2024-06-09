@@ -88,6 +88,17 @@ function Web() {
 
             <Curso2
                   C2_Color='color-web'
+                  C2_Img='wbte1'
+                  C2_Nombre='Daniel 2024'
+                  C2_Fecha='Front-End'
+                  C2_Titulo='Evento Musical'
+                  C2_Enlace='https://daniels36999.github.io/PaguinaWeb_Proyecto_4/'
+                  C2_Descripcion={`HTML, CSS, SASS, GULP
+                                   Paguina Web Responsiva
+                                   Galeria de Imagenes Webp`}/>
+
+            <Curso2
+                  C2_Color='color-web'
                   C2_Img='wbtd1'
                   C2_Nombre='Daniel 2024'
                   C2_Fecha='Front-End'

@@ -28,6 +28,7 @@ import wbta1 from './webp/web1.webp';
 import wbtb1 from './webp/web0.webp';
 import wbtc1 from './webp/web2.webp';
 import wbtd1 from './webp/web3.webp';
+import wbte1 from './webp/web4.webp';
 
 
 
@@ -66,6 +67,7 @@ const imagenes : { [key: string]: string } = {
   "wbtb1":wbtb1,
   "wbtc1":wbtc1,
   "wbtd1":wbtd1,
+  "wbte1":wbte1,
 };
 
 export default imagenes;

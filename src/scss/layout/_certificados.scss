@@ -41,34 +41,35 @@
           }
         }
 
-        .certificado-aptitudes{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 1rem;
-          padding: 0.5rem 1rem;
-          .aptitud{
-            display: flex;
-            place-items: center;
-            column-gap: 0.4rem;
-            background-color: rgba(0, 0, 0, 0.712);
-            border-radius: 20px;
-            padding: 0.5rem 1rem;
-
-            p{
-              font-size: 90%;
-              color: rgb(51, 180, 255);
-            }
-          }
-
-
-          svg{
-            width: 15px;
-            height: 15px;
-            stroke: rgb(255, 255, 255);
-          }
-        }
     }
+}
+
+.certificado-aptitudes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  .aptitud{
+    display: flex;
+    place-items: center;
+    column-gap: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+
+    p{
+      font-size: 90%;
+      color: rgb(51, 180, 255);
+    }
+  }
+
+
+  svg{
+    width: 15px;
+    height: 15px;
+    stroke: rgb(255, 255, 255);
+  }
 }
 
 .certificado-contenido{

@@ -4,7 +4,7 @@ import Tarjeta3 from './templates/components/tarjeta3';
 import Diploma from './templates/components/diploma'
 import imagenes from '../assets/imagenes';
 import Iconos from './templates/recursos/svg';
-
+import Aptitudes from './templates/aptitudes';
 
 function Certificado() {
 
@@ -45,48 +45,7 @@ function Certificado() {
                 T3_Parrafo='Certificados'
                 T3_Url='otros'/>
 
-            <div className='titulos'>
-                <h3>Competencias</h3>
-                <h1>Aptitudes</h1>
-                <div className="linea-efecto"></div>
-            </div>
-            <div className='certificado-aptitudes'>
-                <div className='aptitud'>{Iconos('suma')}<p>Ing. Electrónica</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>Ing. Telecomunicaciones</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>Instalaciones Eléctricas</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>Base de Datos</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>ISO27001</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>Desarrollo Web</p></div>
-            </div>
-
-            <div className='titulos'>
-                <h3>Habilidades</h3>
-                <h1>Informáticas</h1>
-                <div className="linea-efecto"></div>
-            </div>
-            <div className='certificado-aptitudes'>
-                <div className='aptitud'>{Iconos('suma')}<p>Autodesk Inventor</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>AutoCad</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>Power BIr</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>SQL Server</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>Arduino IDE</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>IBM SPSS</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>CST Studio</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>Proteus Desing</p></div>
-            </div>
-
-            <div className='titulos'>
-                <h3>Habilidades</h3>
-                <h1>Ofimáticas</h1>
-                <div className="linea-efecto"></div>
-            </div>
-            <div className='certificado-aptitudes'>
-                <div className='aptitud'>{Iconos('suma')}<p>MS. Word</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>MS. Excel</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>MS. PowerPoint</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>MS. Visio</p></div>
-                <div className='aptitud'>{Iconos('suma')}<p>Overleaf Latex</p></div>
-            </div>
+            <Aptitudes />
 
         </div>
 

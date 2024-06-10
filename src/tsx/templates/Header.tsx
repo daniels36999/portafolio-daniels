@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useState} from 'react';
+import { useState, useEffect} from 'react';
 
 import imagenes from '../../assets/imagenes';
 import Boton from './recursos/botones';
@@ -13,8 +13,13 @@ const Header = () => {
           setIsMenuOpen(!isMenuOpen);
     };
 
+     // Hook to scroll to top on location change
+     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
+
     return(
-        <header className="header">
+        <header className="header" id="header">
             <div className="header-logo">
                 <Link to="/" >
                     <img src={imagenes.logo} alt="Imagen Logo" />

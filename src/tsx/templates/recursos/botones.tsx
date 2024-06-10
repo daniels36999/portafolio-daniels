@@ -20,12 +20,15 @@ const Boton = (propiedades:propiedadesProps) => {
     switch (propiedades.tipo) {
         case 'btn1': //Boton Modelo 1
             boton = (
+                <div className='btn1-descripcion'>
                 <button className="btn" onClick={() => clicEnlace(propiedades.enlace)}>
                     <span className={`btn-Cont ${propiedades.svg}-bd`}>
                         {iconosSvg(propiedades.svg)}
                     </span>
                     <span className={`btn-bg ${propiedades.svg}`}></span>
                 </button>
+                <span>{(propiedades.nombre)}</span>
+                </div>
             );
             return boton;
 

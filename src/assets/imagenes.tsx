@@ -30,6 +30,7 @@ import wbtc1 from './webp/web2.webp';
 import wbtd1 from './webp/web3.webp';
 import wbte1 from './webp/web4.webp';
 import wbtf1 from './webp/web5.webp';
+import aptitud from './webp/aptitud.webp';
 
 
 
@@ -51,6 +52,7 @@ const imagenes : { [key: string]: string } = {
   "certificado5": certificado5,
   "certificado6": certificado6,
   "cursos": cursos,
+  "aptitud": aptitud,
 
 
   "git": git,

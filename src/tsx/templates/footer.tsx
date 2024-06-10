@@ -13,36 +13,37 @@ function Footer() {
       };    
 
   return (
-    <footer className="footer ">
+    <footer className="footer" id='footer'>
         <div className="footer-container-1"> {/* SECCION: PIE DE PAGINA */}
             <div className="footer-information foot-pos1"> {/* SOBRE MI */}
                 <div className='footer-titulos'>
                     <h1>Daniel Yautibug</h1>
                 </div>
-                <p>¡Hola! Te doy la bienvenida a mi portafolio virtual, un espacio donde podrás descubrir algunos de los proyectos en los que he tenido el placer de trabajar. ¡No dudes en visitar mis páginas de contacto para estar en contacto!</p>
+                <p>&#161;Hola! &#128075; Te doy la bienvenida a mi portafolio virtual &#128187;, un espacio donde podrás descubrir algunos de los proyectos en los que he tenido el placer de trabajar &#128188;. &#161;No dudes en visitar mis páginas de contacto &#128233; para estar en contacto!
+                </p>
                 <div className="footer-social-1 tarjeta-btn">
                     <Boton 
                         tipo='btn1'
                         enlace='https://daniels36999.github.io/portafolio-daniels/'
                         svg='web'
-                        clase=''nombre=''/>
+                        clase=''nombre='Portafolio'/>
 
                     <Boton 
                         tipo='btn1'
                         enlace='https://github.com/daniels36999/'
                         svg='github'
-                        clase=''nombre=''/>
+                        clase=''nombre='GitHub'/>
                     <Boton 
                         tipo='btn1'
                         enlace='https://www.linkedin.com/in/daniels-yautibug/'
                         svg='linkedin'
-                        clase=''nombre=''/>
+                        clase=''nombre='LinkedIn'/>
 
                     <Boton 
                         tipo='btn1'  
                         enlace='https://grabcad.com/daniel.patricio.yautibug-1'
                         svg='grabcad'
-                        clase=''nombre=''/>
+                        clase=''nombre='GrabCad'/>
                 </div> 
             </div>
 

@@ -20,10 +20,11 @@ function Blog() {
             <div className="linea-efecto"></div>
           </div>
 
-          <p className='msg-construccion'>Esta página está actualmente en desarrollo. Estamos trabajando arduamente para ofrecerte una experiencia completa y enriquecedora. ¡Gracias por tu paciencia y vuelve pronto para ver las novedades!</p>
-
           <div className='web-construccion'>
-            <img src={imagenes.construccion} alt="" />
+            <img src="https://raw.githubusercontent.com/daniels36999/daniels36999/main/images/gato.gif" alt="Gato" />
+            <p className='msg-construccion'>Esta página está actualmente en desarrollo &#128736;. Estamos trabajando arduamente para ofrecerte una experiencia completa y enriquecedora &#128640;. ¡Gracias por tu paciencia &#128591; y vuelve pronto para ver las novedades &#128197;!
+            </p>
+
           </div>
 
 

@@ -46,6 +46,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -431,6 +433,17 @@ button:hover {
 }
 
 /** Media Queries **/
+.btn1-descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+.btn1-descripcion span {
+  color: #0063cc;
+}
+
 .btn,
 .btn-Cont {
   display: flex;
@@ -517,8 +530,8 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2px 10px;
-  gap: 10px;
+  padding: 1.5px 10px;
+  gap: 5px;
   background-color: #007ACC;
   outline: 3px #007ACC solid;
   outline-offset: -3px;
@@ -529,7 +542,7 @@ button:hover {
 }
 .btn2 .text {
   color: white;
-  font-size: 0.8em;
+  font-size: 0.7em;
   transition: 400ms;
 }
 .btn2 svg path {
@@ -538,8 +551,8 @@ button:hover {
   fill: #ffffff;
 }
 .btn2 svg {
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 18px;
 }
 .btn2.arduino-bg:hover {
   background-color: transparent;
@@ -775,6 +788,99 @@ button:hover {
     background-position: right;
   }
 }
+.seccion-certificado {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2rem;
+  row-gap: 4rem;
+  justify-content: center;
+}
+@media (min-width: 480px) {
+  .seccion-certificado {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .seccion-certificado {
+    grid-template-columns: 40% 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .seccion-certificado {
+    grid-template-columns: 25% 75%;
+  }
+}
+.seccion-certificado p {
+  text-align: justify;
+}
+.seccion-certificado .certificado-opciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  row-gap: 3rem;
+  padding: 4rem 0;
+  background-color: rgba(41, 144, 255, 0.5176470588);
+}
+.seccion-certificado .certificado-opciones .titulos h1 {
+  font-size: 2.5rem;
+}
+.seccion-certificado .certificado-opciones .titulos h3 {
+  font-size: 1.8rem;
+}
+
+.certificado-aptitudes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+.certificado-aptitudes .aptitud {
+  display: flex;
+  place-items: center;
+  column-gap: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.712);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+.certificado-aptitudes .aptitud p {
+  font-size: 90%;
+  color: rgb(51, 180, 255);
+}
+.certificado-aptitudes svg {
+  width: 15px;
+  height: 15px;
+  stroke: rgb(255, 255, 255);
+}
+
+.certificado-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.certificado-contenido .certificado-descripcion {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  row-gap: 1rem;
+}
+.certificado-contenido .certificado-descripcion img {
+  max-width: 250px;
+}
+.certificado-contenido span {
+  color: #2990ff;
+  font-family: "Anonymous Pro", Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.certificado-curso {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
 .portada {
   background-image: url("/src/assets/img/electronica.jpg");
   background-repeat: no-repeat;
@@ -881,25 +987,93 @@ button:hover {
   }
 }
 
+.home-aptitud {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.home-aptitud p {
+  text-align: justify;
+}
+.home-aptitud .aptitudes {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 480px) {
+  .home-aptitud .aptitudes {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .home-aptitud .aptitudes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .home-aptitud .aptitudes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.home-aptitud .aptitudes .titulos h1 {
+  font-size: 2.2rem;
+}
+.home-aptitud .aptitudes .titulos h3 {
+  font-size: 1.5rem;
+}
+.home-aptitud .aptitudes-opciones:last-child {
+  grid-column: 1/1;
+}
+@media (min-width: 480px) {
+  .home-aptitud .aptitudes-opciones:last-child {
+    grid-column: 1/1;
+  }
+}
+@media (min-width: 768px) {
+  .home-aptitud .aptitudes-opciones:last-child {
+    grid-column: 1/3;
+  }
+}
+@media (min-width: 1024px) {
+  .home-aptitud .aptitudes-opciones:last-child {
+    grid-column: 1/3;
+  }
+}
+.home-aptitud .aptitud p {
+  font-size: 1.8rem;
+}
+
 .web-construccion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.559);
-  margin: 5rem 0;
-  padding: 5rem 0;
+  gap: 0 5rem;
+  margin-top: 4rem;
+}
+@media (min-width: 480px) {
+  .web-construccion {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .web-construccion {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .web-construccion {
+    flex-direction: row;
+  }
 }
 .web-construccion img {
-  width: 50%;
+  width: 80%;
 }
 
 .msg-construccion {
   text-align: justify;
   margin: 4rem 0;
-  color: rgb(203, 186, 0);
+  color: rgb(5, 60, 103);
 }
 
 .header {
@@ -1194,7 +1368,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .footer-container-1 .footer-information .footer-social-1 {
   display: flex;
@@ -1300,6 +1474,9 @@ button:hover {
   justify-content: center;
   gap: 5rem;
   flex-wrap: wrap;
+}
+.portafolio-opciones p {
+  text-align: justify;
 }
 
 .curso,
@@ -2202,98 +2379,6 @@ button:hover {
   }
 }
 
-.seccion-certificado {
-  display: grid;
-  grid-template-columns: 1fr;
-  column-gap: 2rem;
-  row-gap: 4rem;
-  justify-content: center;
-}
-@media (min-width: 480px) {
-  .seccion-certificado {
-    grid-template-columns: 1fr;
-  }
-}
-@media (min-width: 768px) {
-  .seccion-certificado {
-    grid-template-columns: 40% 60%;
-  }
-}
-@media (min-width: 1024px) {
-  .seccion-certificado {
-    grid-template-columns: 25% 75%;
-  }
-}
-.seccion-certificado p {
-  text-align: justify;
-}
-.seccion-certificado .certificado-opciones {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 20px;
-  row-gap: 3rem;
-  padding: 4rem 0;
-  background-color: rgba(41, 144, 255, 0.5176470588);
-}
-.seccion-certificado .certificado-opciones .titulos h1 {
-  font-size: 2.5rem;
-}
-.seccion-certificado .certificado-opciones .titulos h3 {
-  font-size: 1.8rem;
-}
-.seccion-certificado .certificado-opciones .certificado-aptitudes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 0.5rem 1rem;
-}
-.seccion-certificado .certificado-opciones .certificado-aptitudes .aptitud {
-  display: flex;
-  place-items: center;
-  column-gap: 0.4rem;
-  background-color: rgba(0, 0, 0, 0.712);
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-}
-.seccion-certificado .certificado-opciones .certificado-aptitudes .aptitud p {
-  font-size: 90%;
-  color: rgb(51, 180, 255);
-}
-.seccion-certificado .certificado-opciones .certificado-aptitudes svg {
-  width: 15px;
-  height: 15px;
-  stroke: rgb(255, 255, 255);
-}
-
-.certificado-contenido {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-.certificado-contenido .certificado-descripcion {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  row-gap: 1rem;
-}
-.certificado-contenido .certificado-descripcion img {
-  max-width: 250px;
-}
-.certificado-contenido span {
-  color: #2990ff;
-  font-family: "Anonymous Pro", Helvetica, sans-serif;
-  font-weight: 700;
-}
-
-.certificado-curso {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  flex-wrap: wrap;
-}
-
 .consola {
   display: flex;
   flex-direction: column;
@@ -2799,5 +2884,33 @@ button:hover {
 
 .AllowBtn:hover {
   background-color: rgb(0, 98, 255);
+}
+
+.scroll-icono {
+  line-height: 0;
+  display: inline-block;
+  position: fixed;
+  background-color: #2990ff;
+  border-radius: 50%;
+  padding: 0.8rem 0.8rem;
+  z-index: 99;
+}
+.scroll-icono svg {
+  width: 22px;
+  height: 22px;
+}
+.scroll-icono:hover {
+  cursor: pointer;
+  background-color: rgb(46, 122, 255);
+}
+
+.arriba-svg {
+  right: 30px;
+  bottom: 45px;
+}
+
+.abajo-svg {
+  right: 30px;
+  bottom: 100px;
 }
 /*# sourceMappingURL=app.css.map */

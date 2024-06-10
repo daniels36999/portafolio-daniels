@@ -20,7 +20,8 @@ function Contacto() {
               <div className="linea-efecto"></div>
             </div>
             <div className='contacto-introduccion'>
-              <p>Gracias por visitar nuestra página de contacto. Si tienes alguna pregunta, comentario o necesitas asistencia, no dudes en comunicarte con nosotros. Nos esforzamos por brindar el mejor servicio posible y estamos aquí para responder a todas tus consultas.</p>
+              <p>Gracias por visitar nuestra página de contacto. Si tienes alguna pregunta &#10067;, comentario &#128172; o necesitas asistencia &#128104;&#8205;&#128187;, no dudes en comunicarte con nosotros &#128222;. Nos esforzamos por brindar el mejor servicio posible &#11088; y estamos aquí para responder a todas tus consultas &#128233;.
+              </p>
             </div>
             <div className='contacto-banner'>
               <div className='contacto-boton'>

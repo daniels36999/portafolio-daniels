@@ -108,6 +108,62 @@
 }
 
 
+.home-aptitud{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+
+    p{
+        text-align: justify;
+    }
+    .aptitudes{
+        display: grid;
+        grid-template-columns: 1fr;
+        @include telefono{
+            grid-template-columns: 1fr;
+          }
+          @include tablet{
+            grid-template-columns: repeat(2, 1fr);
+          }
+        
+          @include desktop{
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          .titulos{
+            h1{
+                font-size: 2.2rem;
+            }
+            h3{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .aptitudes-opciones:last-child{
+        grid-column: 1/1;
+        @include telefono{
+            grid-column: 1/1;
+          }
+          @include tablet{
+            grid-column: 1/3;
+          }
+        
+          @include desktop{
+            grid-column: 1/3;
+          }
+    }
+
+
+    .aptitud{
+        p{
+            font-size: 1.8rem;
+        }
+    }
+
+
+}
+
 //IMAGEN DE CONSTRUCCION
 .web-construccion{
     display: flex;
@@ -115,12 +171,21 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.559); 
-    margin: 5rem 0;
-    padding: 5rem 0;
+    gap: 0 5rem;
+    margin-top: 4rem;
+    @include telefono{
+        flex-direction: column;
+      }
+
+    @include tablet{
+        flex-direction: row;
+      }
+    
+    @include desktop{
+        flex-direction: row;
+      }
     img{
-        width: 50%;
+        width: 80%;
     }
 
 }
@@ -128,7 +193,7 @@
 .msg-construccion{
     text-align: justify;
     margin: 4rem 0;
-    color: rgb(203, 186, 0);
+    color: rgb(5, 60, 103);
 }
 
 

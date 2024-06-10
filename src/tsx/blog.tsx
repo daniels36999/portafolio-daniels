@@ -1,6 +1,5 @@
 import Header from './templates/Header';
 import Footer from './templates/footer';
-import imagenes from '../assets/imagenes';
 
 
 

@@ -3,7 +3,6 @@ import Footer from './templates/footer';
 import Tarjeta3 from './templates/components/tarjeta3';
 import Diploma from './templates/components/diploma'
 import imagenes from '../assets/imagenes';
-import Iconos from './templates/recursos/svg';
 import Aptitudes from './templates/aptitudes';
 
 function Certificado() {

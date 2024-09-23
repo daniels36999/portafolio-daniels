@@ -23,7 +23,7 @@ function Electronica() {
             <div className="linea-efecto"></div>
           </div>
           <div className='curso-proy-descripcion'>
-            <p>La ingeniería en electrónica es una rama de la ingeniería que se enfoca en el diseño, desarrollo y aplicación de dispositivos y sistemas electrónicos. Involucra el estudio de componentes y circuitos electrónicos para su uso en comunicaciones, computación, automatización, robótica e instrumentación. Los ingenieros electrónicos trabajan con tecnología de punta para crear soluciones innovadoras en diversos campos, desde sistemas embebidos hasta telecomunicaciones y control de procesos industriales.</p>
+            <p>La ingeniería en electrónica es una rama de la ingeniería que se enfoca en el diseño, desarrollo y aplicación de dispositivos y sistemas electrónicos. Involucra el estudio de componentes y circuitos electrónicos para su uso en comunicaciones, computación, automatización, robótica e instrumentación.</p>
           </div>
           <div className='curso-informacion'>
             <div className='curso-inf-skill'>
@@ -93,7 +93,7 @@ function Electronica() {
                                    Ventas vs Género vs Pais
                                    Ventas vs Año vs Región`}/> */}
 
-            <p className='msg-construccion'>"&#9888; Actualmente estamos recopilando mis proyectos más destacados, los cuales estarán disponibles próximamente en mi página. Muy pronto podrás explorar el trabajo que he realizado a lo largo de mi carrera y en los cursos que he completado &#128218;. Mientras tanto, si deseas saber más, puedes consultar mi GitHub o LinkedIn para obtener más detalles sobre mi experiencia y habilidades &#128296;."</p>
+            <p className='msg-construccion'>"&#9888; Actualmente estamos recopilando mis proyectos más destacados, los cuales estarán disponibles próximamente en mi página. Mientras tanto, si deseas saber más, puedes consultar mi GitHub o LinkedIn para obtener más detalles sobre mi experiencia y habilidades &#128296;."</p>
           </div>
 
           {/* //SECCION CERTIFICADO*/}
@@ -103,7 +103,7 @@ function Electronica() {
             <div className="linea-efecto"></div>
           </div>
           <div className='curso-proy-descripcion'>
-            <p>En esta sección, puedes encontrar mi título universitario  de Ingeniería en Electrónica y Telecomunicaciones. Esta trayectoria universitaria me permitió adquirir competencias en el diseño y desarrollo de sistemas electrónicos y de telecomunicaciones, aprendiendo a implementar y optimizar circuitos, así como a manejar tecnologías de comunicación avanzada.</p>
+            <p>En esta sección, puedes encontrar mi título Universitario  de Ingeniería en Electrónica y Telecomunicaciones.</p>
           </div>
           <div className='curso-certificado'>
             <div className='curso-cert-img'>

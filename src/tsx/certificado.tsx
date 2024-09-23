@@ -56,7 +56,7 @@ function Certificado() {
             </div>
 
             <div className='certificado-descripcion'>
-                <p>A lo largo de mi carrera estudiantil y profecional 	&#127891;, he obtenido diversas certificaciones que demuestran mi compromiso con el aprendizaje continuo y la mejora profesional &#128218;. Estas credenciales reflejan mis habilidades y conocimientos en diferentes áreas técnicas, validando mi competencia y dedicación en el campo de la Electrónica, Telecomunicaciones y el Desarrollo Web &#128187;.</p>
+                <p>A lo largo de mi carrera estudiantil y profecional 	&#127891;, he obtenido diversas certificaciones que demuestran mi compromiso con el aprendizaje continuo y la mejora profesional &#128218;. Estas credenciales reflejan mis habilidades y conocimientos en diferentes áreas técnicas, validando mi competencia y dedicación &#128187;.</p>
                 <img src={imagenes.cursos} alt="Imagen Tecnologia" />
             </div>
 

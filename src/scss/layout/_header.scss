@@ -6,6 +6,8 @@
   row-gap: 2rem;
   padding: 2rem 2rem;
   background-color:rgb(0, 0, 0);
+  position: relative;
+  z-index: 99;
 
   @include telefono{
     grid-template-columns: 1fr;

@@ -23,7 +23,7 @@ function Web() {
             <div className="linea-efecto"></div>
           </div>
           <div className='curso-proy-descripcion'>
-            <p>El desarrollo Web es un enfoque integral para el desarrollo de sitios y aplicaciones web, abarcando desde la estructura y el diseño visual hasta la interactividad y la funcionalidad del servidor. Permite crear experiencias web modernas y dinámicas, integrando tecnologías de front-end y back-end para ofrecer soluciones completas y eficientes.</p>
+            <p>El desarrollo Web es un enfoque integral para el desarrollo de sitios y aplicaciones web, abarcando desde la estructura y el diseño visual hasta la interactividad y la funcionalidad del servidor. </p>
           </div>
           <div className='curso-informacion'>
             <div className='curso-inf-skill'>
@@ -33,7 +33,6 @@ function Web() {
                   </div>
                   <h3>Front-End</h3>
                 </div>
-                <p>El Front-End es la parte visual y interactiva de un sitio web, desarrollada con HTML5, CSS3 y JavaScript. Es responsable de la estructura, el diseño y la interacción del usuario. </p>
                 <h4>Aptitudes adquiridas</h4>
                 <ul>
                   <li>Metodologias HTML y CSS</li>
@@ -53,7 +52,6 @@ function Web() {
                   </div>
                   <h3>Back-End</h3>
                 </div>
-              <p>El Back-End gestiona la lógica del servidor y la base de datos con PHP y MySQL. Procesa datos y maneja la autenticación, comunicándose con el front-end para ofrecer contenido dinámico.</p>
               <h4>Aptitudes adquiridas</h4>
               <ul>
                 <li>Base de Datos con MS SQL Server</li>
@@ -141,7 +139,7 @@ function Web() {
                                    Enlaces y Navegacion
                                    Formularios en HTML`}/>
 
-            <p className='msg-construccion'>"&#9888; Actualmente estamos recopilando mis proyectos más destacados, los cuales estarán disponibles próximamente en mi página. Muy pronto podrás explorar el trabajo que he realizado a lo largo de mi carrera y en los cursos que he completado &#128218;. Mientras tanto, si deseas saber más, puedes consultar mi GitHub o LinkedIn para obtener más detalles sobre mi experiencia y habilidades &#128296;."</p>
+            <p className='msg-construccion'>"&#9888; Actualmente estamos recopilando mis proyectos más destacados, los cuales estarán disponibles próximamente en mi página. . Mientras tanto, si deseas saber más, puedes consultar mi GitHub o LinkedIn para obtener más detalles sobre mi experiencia y habilidades &#128296;."</p>
 
           </div>
 
@@ -152,7 +150,7 @@ function Web() {
             <div className="linea-efecto"></div>
           </div>
           <div className='curso-proy-descripcion'>
-            <p>En esta sección, puedes encontrar mi certificado del curso de Desarrollo Web Completo con HTML5, CSS3, JavaScript, AJAX, PHP y MySQL. Este curso me permitió adquirir competencias en desarrollo web, aprendiendo a crear sitios y aplicaciones web dinámicas e interactivas, utilizando tecnologías modernas y herramientas avanzadas para garantizar un desarrollo eficiente y de alta calidad.</p>
+            <p>En esta sección, puedes encontrar mi certificado del curso de Desarrollo Web Completo con HTML5, CSS3, JavaScript, AJAX, PHP y MySQL.</p>
           </div>
           <div className='curso-certificado'>
             <div className='curso-cert-img'>

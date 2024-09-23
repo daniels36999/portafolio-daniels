@@ -34,7 +34,7 @@ const Seccion2 = () => {
                         </div>             
                     </div>
                 </div>
-                <p>Soy un ingeniero apasionado por la electrónica y las telecomunicaciones, con sólida experiencia en desarrollo web. Busco nuevas oportunidades y colaboraciones donde pueda aportar mis habilidades técnicas avanzadas. Si tienes un proyecto o vacante que se ajuste a mi perfil, no dudes en contactarme a través del formulario o los métodos proporcionados. ¡Espero con interés saber de ti!</p>
+                <p>Soy ingeniero en Electrónica y Telecomunicaciones con experiencia en Desarrollo Web, Electrónica y Telecomunicaciones. Busco nuevas oportunidades donde pueda aplicar mis habilidades. Si tienes un proyecto o vacante acorde a mi perfil, contáctame. ¡Espero saber de ti!</p>
                 <div className='about-contacto'>
                     <div className='ab-contacto-img'>
                         {Iconos('email2')}

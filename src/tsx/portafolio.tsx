@@ -20,7 +20,7 @@ function Portafolio() {
           </div>
 
           <div className='portafolio-descripcion'>
-            <p>A continuación, puedes encontrar mis portafolios digitales &#128218;, donde se presentan proyectos y trabajos realizados durante mi trayectoria estudiantil y profesional. Además, podrás explorar proyectos relacionados con el desarrollo web &#128187;, así como análisis de datos y business intelligence utilizando Power BI &#128200;. Estos portafolios demuestran mis habilidades y conocimientos en ingeniería electrónica y telecomunicaciones, junto con mi capacidad para desarrollar soluciones web y analizar datos para la toma de decisiones estratégicas. &#128640;</p>
+            <p>A continuación, puedes encontrar mis portafolios digitales &#128218;, donde se presentan proyectos y trabajos realizados durante mi trayectoria estudiantil y profesional. Además, podrás explorar proyectos relacionados con el desarrollo web &#128187;, así como análisis de datos y business intelligence utilizando Power BI &#128200;.</p>
           </div>
 
           <div className='portafolio-opciones'>

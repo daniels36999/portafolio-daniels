@@ -33,7 +33,6 @@ function Powerbi() {
                   </div>
                   <h3>Análisis de Datos</h3>
                 </div>
-                <p>El Análisis de Datos es el proceso de examinar y transformar datos para descubrir información útil y apoyar la toma de decisiones, utilizando técnicas estadísticas y de minería de datos. </p>
                 <h4>Aptitudes adquiridas</h4>
                 <ul>
                   <li>Visualización dinámica de datos</li>
@@ -53,7 +52,6 @@ function Powerbi() {
                 </div>
                 <h3>B. Intelligence</h3>
               </div>
-              <p>Es un conjunto de tecnologías y prácticas que analizan datos empresariales para proporcionar información precisa y oportuna, mejorando la eficiencia operativa y desarrollando estrategias efectivas.</p>
               <h4>Aptitudes adquiridas</h4>
               <ul>
                 <li>DAX con Power BI</li>
@@ -119,7 +117,7 @@ function Powerbi() {
                                    Metas, Presupuesto, Esp. Financiera
                                    Reportes de Finanzas Personales`}/>
 
-            <p className='msg-construccion'>"&#9888; Actualmente estamos recopilando mis proyectos más destacados, los cuales estarán disponibles próximamente en mi página. Muy pronto podrás explorar el trabajo que he realizado a lo largo de mi carrera y en los cursos que he completado &#128218;. Mientras tanto, si deseas saber más, puedes consultar mi GitHub o LinkedIn para obtener más detalles sobre mi experiencia y habilidades &#128296;."</p>
+            <p className='msg-construccion'>"&#9888; Actualmente estamos recopilando mis proyectos más destacados, los cuales estarán disponibles próximamente en mi página. Mientras tanto, si deseas saber más, puedes consultar mi GitHub o LinkedIn para obtener más detalles sobre mi experiencia y habilidades &#128296;."</p>
 
           </div>
 
@@ -130,7 +128,7 @@ function Powerbi() {
             <div className="linea-efecto"></div>
           </div>
           <div className='curso-proy-descripcion'>
-            <p>En esta sección, puedes encontrar mi certificado del curso de Power BI. Este curso me permitió adquirir competencias en análisis de datos y business intelligence, aprendiendo a utilizar Power BI para crear visualizaciones interactivas y paneles de control eficaces.</p>
+            <p>En esta sección, puedes encontrar mi certificado del curso de Power BI. </p>
           </div>
           <div className='curso-certificado'>
             <div className='curso-cert-img'>

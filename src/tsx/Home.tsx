@@ -32,7 +32,7 @@ function Home() {
                 <div className='portada-desc'>     
                     <h2 className='port-nombre'>Ing. en Electónica y Telecomunicaciones</h2>
                     <h1>Hola, Soy Daniel Yautibug </h1>
-                    <p className='port-descripcion'> Ingeniero en Electrónica y Telecomunicaciones con una formación académica sólida y experiencia en el diseño, desarrollo y optimización de sistemas en electrónica, telecomunicaciones y desarrollo web (Front-End).</p>
+                    <p className='port-descripcion'> Ing. en Electrónica y Telecomunicaciones con una formación académica sólida y experiencia en el diseño, desarrollo y optimización de sistemas en electrónica, telecomunicaciones y desarrollo web (Front-End).</p>
                     <div className='portada-btn'>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ function Home() {
           E_Icono='electronica'
           E_Titulo1='Profesión'
           E_Titulo2='Ingeniero | Electrónica'
-          E_Parrafo='En la actualidad soy ingeniero en Electrónica y Telecomunicaciones con habilidades destacadas en el diseño y construcción de circuitos impresos PCB, diseño 3D de piezas con creación de planos técnicos, instalaciones electricas y mantenimiento preventivo y correctivo de computadoras (software y hardware). Estas habilidades, junto con otras adquiridas a lo largo de mi carrera estudiantil y profesional, me permiten abordar proyectos de manera integral y eficiente.'
+          E_Parrafo='Actualmente soy ingeniero en Electrónica y Telecomunicaciones con habilidades en diseño de PCBs, modelado 3D, instalaciones eléctricas, y mantenimiento de computadoras. Esto me permite abordar proyectos de forma integral y eficiente.'
           E_Lista1='Arduino IDE'
           E_Lista2='Proteus Desing'
           E_Lista3='Fritzing'
@@ -70,7 +70,7 @@ function Home() {
           E_Icono='telecomunicaciones'
           E_Titulo1='Profesión'
           E_Titulo2='Ingeniero | Telecomunicaciones'
-          E_Parrafo='"Mi experiencia en el área de las telecomunicaciones incluye la revisión y mantenimiento de Switches de distribución, la actualización de inventarios de equipos de infraestructura y conocimientos en redes y fibra optica. Estas habilidades, junto con otras adquiridas en mi carrera estudiantil y profesional, me han permitido destacar en el campo de las telecomunicaciones.'
+          E_Parrafo='Tengo experiencia en telecomunicaciones, incluyendo mantenimiento de switches de distribución, actualización de inventarios de infraestructura, y conocimientos en redes y fibra óptica, lo que me ha permitido destacar en este campo.'
           E_Lista1='Switch, Routers'
           E_Lista2='Redes Lan'
           E_Lista3='Fíbra Óptica'
@@ -94,7 +94,7 @@ function Home() {
         {/* <Cursos /> */}
 
         <div className='portafolio-opciones contenedor'>
-        <p>En esta sección se encuentran los portafolios correspondientes a mi carrera y los cursos realizados. Aquí podrás explorar una selección de mis trabajos más destacados, que reflejan mi experiencia y habilidades adquiridas a lo largo de mi formación profesional y académica.</p>
+        <p>Aquí encontrarás mis portafolios y cursos, con una selección de mis trabajos más destacados que reflejan mi experiencia y habilidades adquiridas.</p>
           {/*  */}
           <Tarjeta2 
             T2_Titulo='Desarrollo Web | Front-End'
@@ -141,7 +141,7 @@ function Home() {
             <div className="linea-efecto"></div>
           </div>
           <div className='contacto-introduccion'>
-            <p>En esta sección, encontrarás un resumen de mis habilidades y competencias en diversas áreas. Desde mi formación en Ingeniería Electrónica y Telecomunicaciones hasta mis habilidades informáticas y ofimáticas, cada aptitud ha sido adquirida y desarrollada a lo largo de mi trayectoria profesional. Explora a continuación las áreas en las que puedo aportar valor y conocer más sobre mi perfil.</p>
+            <p>Aquí encontrarás un resumen de mis habilidades en diversas áreas, desde mi formación en Ingeniería Electrónica y Telecomunicaciones hasta competencias informáticas. Descubre cómo puedo aportar valor a través de mi perfil.</p>
           </div>
           <Aptitudes/>
           </div>
@@ -156,7 +156,7 @@ function Home() {
             <div className="linea-efecto"></div>
           </div>
           <div className='contacto-introduccion'>
-            <p>Gracias por visitar nuestra página. Si tienes alguna pregunta, comentario o necesitas asistencia, no dudes en comunicarte con nosotros. Nos esforzamos por brindar el mejor servicio posible y estamos aquí para responder a todas tus consultas.</p>
+            <p>Gracias por visitar mi página. Si tienes alguna pregunta, comentario o necesitas asistencia, no dudes en comunicarte conmigo. Me esforzaré por brindarte el mejor servicio posible y estaré aquí para responder a todas tus consultas.</p>
           </div>
           <div className='contacto-banner'>
             <div className='contacto-boton'>

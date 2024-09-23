@@ -13,7 +13,7 @@ const About = () => {
                     <h1>Desarrollador Web | Front-End</h1>
                     <div className="linea-efecto"></div>
                 </div>
-                <p>Actualmente, estoy especializandome en el desarrollo de aplicaciones web (Front-End) utilizando herramientas y tecnologías de vanguardia. Mi conjunto de habilidades incluye HTML, CSS, JavaScript, Sass, Gulp y React, entre otras. Además, tengo experiencia en optimizar el rendimiento de las páginas web para garantizar que sean completamente responsivas.</p>
+                <p>Me especializo en desarrollo Front-End con herramientas modernas como HTML, CSS, JavaScript, Sass, Gulp y React. También optimizo el rendimiento web para asegurar sitios completamente responsivos.</p>
                 <div className='about-lista'>
                     <div className='about-lista1'>
                         <div className='lista1'>

@@ -10,6 +10,23 @@
     background-position: center center;
     position: relative;
     margin-bottom: 8rem;
+
+       // Pseudo-elemento para el fondo difuminado
+       &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: inherit; // Hereda la imagen de fondo
+        background-repeat: inherit;
+        background-size: inherit;
+        background-position: inherit;
+        filter: blur(20px); // Ajusta el nivel de difuminado
+        z-index: 0; // Coloca detrás del contenido
+    }
+
     @include tablet{
         margin-bottom: 3rem;
     }
@@ -19,8 +36,8 @@
     
 
     .portada-bg1{
-        background-color: #000000be;
-
+        background-color: #000000d8;
+        position: relative;
     }
 
     .portada-contenido{
@@ -28,6 +45,7 @@
         row-gap: 5rem;
         height: 100%;
         padding: 3rem 2.5rem;
+        position: relative;
 
         h1, h2{
             color: va.$color_bg2;
@@ -88,7 +106,7 @@
         font-family: va.$fuente_hack;
     }
     p{
-        text-align: justify;
+        text-align: center;
         font-size: 3rem;
         font-family: va.$fuente_hack;
     }
@@ -114,7 +132,7 @@
     row-gap: 3rem;
 
     p{
-        text-align: justify;
+        text-align: center;
     }
     .aptitudes{
         display: grid;
@@ -191,7 +209,7 @@
 }
 
 .msg-construccion{
-    text-align: justify;
+    text-align: center;
     margin: 4rem 0;
     color: rgb(5, 60, 103);
 }

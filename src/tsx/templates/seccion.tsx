@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import Iconos from './recursos/svg';
-import Tarjeta1 from './components/tarjeta1';
+import Tarjeta1 from './components/Tarjeta1';
 
 interface ElectronicaProps {
     E_Tipo:string;

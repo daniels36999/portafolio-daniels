@@ -90,7 +90,7 @@ function Web() {
                   C2_Nombre='Daniel 2024'
                   C2_Fecha='Front-End'
                   C2_Titulo='Bienes y Raices'
-                  C2_Enlace='https://daniels36999.github.io/PaguinaWeb_Proyecto_5/'
+                  C2_Enlace='https://daniels36999.github.io/gallery-page-website/'
                   C2_Descripcion={`HTML, CSS, SASS, GULP
                                    Paguina Web Responsiva
                                    Dark-Mode`}/>
@@ -101,7 +101,7 @@ function Web() {
                   C2_Nombre='Daniel 2024'
                   C2_Fecha='Front-End'
                   C2_Titulo='Evento Musical'
-                  C2_Enlace='https://daniels36999.github.io/PaguinaWeb_Proyecto_4/'
+                  C2_Enlace='https://daniels36999.github.io/festival-landing-page/'
                   C2_Descripcion={`HTML, CSS, SASS, GULP
                                    Paguina Web Responsiva
                                    Galeria de Imagenes Webp`}/>
@@ -112,7 +112,7 @@ function Web() {
                   C2_Nombre='Daniel 2024'
                   C2_Fecha='Front-End'
                   C2_Titulo='Blog Café'
-                  C2_Enlace='https://daniels36999.github.io/PaguinaWeb_Proyecto_3/'
+                  C2_Enlace='https://daniels36999.github.io/landing-page-blogcafe/'
                   C2_Descripcion={`Estilos en CSS, Media Queries
                                    Enlaces y Navegacion
                                    Formularios en HTML`}/>
@@ -123,7 +123,7 @@ function Web() {
                   C2_Nombre='Daniel 2024'
                   C2_Fecha='Front-End'
                   C2_Titulo='Store Online'
-                  C2_Enlace='https://daniels36999.github.io/PaguinaWeb_Proyecto_2/'
+                  C2_Enlace='https://daniels36999.github.io/storefront-website/'
                   C2_Descripcion={`Introducción a BEM
                                    Grid, Flexbox
                                    Globales, Media Queries`}/>
@@ -134,7 +134,7 @@ function Web() {
                   C2_Nombre='Daniel 2023'
                   C2_Fecha='Front-End'
                   C2_Titulo='Sitio Freelancer'
-                  C2_Enlace='https://daniels36999.github.io/PaguinaWeb_Proyecto_1/'
+                  C2_Enlace='https://daniels36999.github.io/contact-page-website/'
                   C2_Descripcion={`Estilos en CSS, Media Queries
                                    Enlaces y Navegacion
                                    Formularios en HTML`}/>
